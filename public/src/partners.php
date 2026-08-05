@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $pageTitle = 'Partners — Forebetz Sponsorship and Partners';
 $pageDescription = 'Forebetz sponsorship and partner brands. Explore our betting and tips partners.';
@@ -15,12 +15,12 @@ $partners = [
     'Bet Winning Tips',
 ];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
@@ -58,4 +58,4 @@ include __DIR__ . '/includes/head.php';
     </div>
 </div>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

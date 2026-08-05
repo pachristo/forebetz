@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $categoryTitle = 'Forebetz Livescores Today';
 $categoryDesc = 'Stay on top of every moment with free Live Football Scores, lightning fast goals, cards, and match events all in one place.';
@@ -134,34 +134,34 @@ $leagueFaqIntro = 'Where can I find 99 percent football prediction site? Forebet
 
 $leagueConclusion = 'Forebetz is the most sure football prediction site in the world and the only site that predicts football matches correctly. We do more than prediction sites that never lose and we make a responsibility to give you a sure win prediction for today. When next you are searching for 100 sure football prediction site, sure football prediction site for today, sure football prediction site free, 99 percent football prediction site, and sure win prediction today — Forebetz remains your best choice for free live football scores and tips.';
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
-        <?php include __DIR__ . '/includes/components/category-hero.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/components/category-hero.php'; ?>
 
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site rounded-[20px] bg-[#f0f0f0] p-2.5 text-[#1e1e1e] sm:rounded-[30px] sm:p-8 lg:p-10">
                 <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-start lg:gap-[30px]">
                     <div class="min-w-0 flex-1">
-                        <?php include __DIR__ . '/includes/components/live-filters.php'; ?>
+                        <?php include __DIR__ . '/../includes/components/live-filters.php'; ?>
 
                         <div class="mt-4 flex flex-col gap-2.5 sm:mt-5 sm:gap-2.5">
                             <?php foreach ($liveGroups as $liveGroup): ?>
-                                <?php include __DIR__ . '/includes/components/live-league-group.php'; ?>
+                                <?php include __DIR__ . '/../includes/components/live-league-group.php'; ?>
                             <?php endforeach; ?>
                         </div>
 
-                        <?php include __DIR__ . '/includes/components/league-seo.php'; ?>
+                        <?php include __DIR__ . '/../includes/components/league-seo.php'; ?>
                     </div>
 
-                    <?php include __DIR__ . '/includes/components/sidebar.php'; ?>
+                    <?php include __DIR__ . '/../includes/components/sidebar.php'; ?>
                 </div>
             </div>
         </main>
     </div>
 </div>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

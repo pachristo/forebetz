@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $planKey = strtolower((string) ($_GET['plan'] ?? 'weekly'));
 $plans = [
@@ -47,12 +47,12 @@ $paymentMethods = [
     ],
 ];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
 
         <?php /* Mobile 477:95617 — stacked cards; tablet 2-col; desktop 3-col */ ?>
         <main class="w-full px-2.5 pb-8 pt-2 sm:px-8 sm:pb-10 sm:pt-2.5 lg:px-[100px]">
@@ -187,4 +187,4 @@ include __DIR__ . '/includes/head.php';
 })();
 </script>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

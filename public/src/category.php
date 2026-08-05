@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $catSlug = $_GET['cat'] ?? 'acca-tips';
 $activeCat = null;
@@ -24,21 +24,21 @@ $pageDescription = $categoryDesc;
 $seoHeading = $activeCat['label'];
 $seoIntro = 'Forebetz is a sure football prediction site in the world and the only site that predicts football matches correctly and we are dedicated to providing sure win predictions for today. Use ' . $activeCat['label'] . ' on this page to build smarter selections with researched tips across top leagues.';
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
-        <?php include __DIR__ . '/includes/components/category-hero.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/components/category-hero.php'; ?>
 
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site rounded-[20px] bg-[#f0f0f0] p-2.5 text-[#1e1e1e] sm:rounded-[30px] sm:p-8 lg:p-10">
                 <div class="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-start lg:gap-[30px]">
                     <div class="min-w-0 flex-1">
-                        <?php include __DIR__ . '/includes/components/predictions.php'; ?>
+                        <?php include __DIR__ . '/../includes/components/predictions.php'; ?>
                     </div>
-                    <?php include __DIR__ . '/includes/components/sidebar.php'; ?>
+                    <?php include __DIR__ . '/../includes/components/sidebar.php'; ?>
                 </div>
 
                 <section class="mt-8 rounded-[30px] bg-white px-5 py-8 text-[#1e1e1e] sm:px-8 sm:py-10">
@@ -69,4 +69,4 @@ include __DIR__ . '/includes/head.php';
     </div>
 </div>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

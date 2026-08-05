@@ -1,6 +1,6 @@
 <?php
 /**
- * Vercel PHP front controller (Root Directory = public).
+ * Vercel / front-controller — serves pages from /src.
  */
 declare(strict_types=1);
 
@@ -15,11 +15,11 @@ if (str_contains($path, '..')) {
     exit;
 }
 
-$publicRoot = realpath(__DIR__ . '/..');
-if ($publicRoot === false) {
+$pagesRoot = realpath(__DIR__ . '/../src');
+if ($pagesRoot === false) {
     http_response_code(500);
     header('Content-Type: text/plain; charset=UTF-8');
-    echo 'Public root missing';
+    echo 'Pages root missing';
     exit;
 }
 
@@ -27,30 +27,19 @@ if ($path === '/' || $path === '') {
     $relative = 'index.php';
 } else {
     $relative = ltrim($path, '/');
-    // Never route the api entry into itself / protect includes
-    if (
-        $relative === 'api/index.php'
-        || str_starts_with($relative, 'api/')
-        || str_starts_with($relative, 'includes/')
-    ) {
-        http_response_code(404);
-        header('Content-Type: text/plain; charset=UTF-8');
-        echo 'Not found';
-        exit;
-    }
     if (!str_ends_with($relative, '.php')) {
         $withPhp = $relative . '.php';
-        if (is_file($publicRoot . '/' . $withPhp)) {
+        if (is_file($pagesRoot . '/' . $withPhp)) {
             $relative = $withPhp;
         }
     }
 }
 
-$target = realpath($publicRoot . '/' . $relative);
+$target = realpath($pagesRoot . '/' . $relative);
 
 if (
     $target === false
-    || !str_starts_with($target, $publicRoot)
+    || !str_starts_with($target, $pagesRoot)
     || !is_file($target)
     || !str_ends_with($target, '.php')
 ) {
@@ -61,7 +50,7 @@ if (
 }
 
 $_SERVER['SCRIPT_FILENAME'] = $target;
-$_SERVER['SCRIPT_NAME'] = '/' . ltrim(str_replace('\\', '/', substr($target, strlen($publicRoot))), '/');
+$_SERVER['SCRIPT_NAME'] = '/' . ltrim(str_replace('\\', '/', substr($target, strlen($pagesRoot))), '/');
 
 chdir(dirname($target));
 require $target;

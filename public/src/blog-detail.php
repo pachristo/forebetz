@@ -2,7 +2,7 @@
 /**
  * Blog detail — Figma 347:19782 (desktop) / 477:74053 (mobile + tablet)
  */
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $postTitle = '10 of the most wasted talents in football. The world at their feet';
 $pageTitle = $postTitle . ' — Forebetz Blog';
@@ -50,12 +50,12 @@ $shareLinks = [
     ['href' => '#facebook', 'icon' => 'facebook.svg', 'label' => 'Share on Facebook', 'box' => 'size-[27px]'],
 ];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden pb-20 lg:pb-0">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
 
         <?php /* Mobile hero — Figma 477:74053 */ ?>
         <section class="w-full px-2.5 pt-5 sm:px-8 lg:px-[100px] lg:pt-2.5">
@@ -131,7 +131,7 @@ include __DIR__ . '/includes/head.php';
                     $moreHref = '/blog.php';
                     $titleClass = 'text-[20px]';
                     $moreClass = 'text-[14px]';
-                    include __DIR__ . '/includes/components/blog-section-header.php';
+                    include __DIR__ . '/../includes/components/blog-section-header.php';
                     unset($titleClass, $moreClass);
                     ?>
 
@@ -157,7 +157,7 @@ include __DIR__ . '/includes/head.php';
                             <div class="min-w-0">
                                 <?php
                                 $variant = 'compact';
-                                include __DIR__ . '/includes/components/blog-news-card.php';
+                                include __DIR__ . '/../includes/components/blog-news-card.php';
                                 ?>
                             </div>
                         <?php endforeach; ?>
@@ -168,4 +168,4 @@ include __DIR__ . '/includes/head.php';
     </div>
 </div>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

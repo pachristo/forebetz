@@ -1,12 +1,12 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $pageTitle = 'Create Account — Forebetz';
 $pageDescription = 'Register for a Forebetz account to access sure football predictions, daily expert tips, and VIP packages.';
 
 $countries = ['Nigeria', 'United Kingdom', 'Ghana', 'Kenya', 'South Africa', 'United States'];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 
 ob_start();
 ?>
@@ -143,7 +143,7 @@ ob_start();
                         </p>
 <?php
 $authContent = ob_get_clean();
-include __DIR__ . '/includes/components/auth-shell.php';
+include __DIR__ . '/../includes/components/auth-shell.php';
 ?>
 
 <script>
@@ -162,5 +162,5 @@ include __DIR__ . '/includes/components/auth-shell.php';
 <?php
 $hideSiteFooter = true;
 $hideMobileNav = true;
-include __DIR__ . '/includes/footer.php';
+include __DIR__ . '/../includes/footer.php';
 ?>

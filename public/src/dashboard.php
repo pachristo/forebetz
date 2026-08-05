@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 /**
  * Inactive dashboard — Figma 382:79989
@@ -48,18 +48,18 @@ $inactivePackages = [
     ],
 ];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
 
         <?php /* Inactive mobile 382:83811 / desktop 382:79989. Active: ?active=1 */ ?>
         <main class="w-full px-2.5 py-5 sm:px-5 sm:py-6 lg:px-5 lg:pb-10 lg:pt-0">
             <div class="mx-auto flex w-full max-w-site flex-col gap-[22px] rounded-[20px] bg-[#dedede] p-2.5 sm:gap-[26px] sm:p-5 lg:flex-row lg:items-start lg:p-5">
                 <div class="hidden lg:block">
-                    <?php include __DIR__ . '/includes/components/dashboard-sidebar.php'; ?>
+                    <?php include __DIR__ . '/../includes/components/dashboard-sidebar.php'; ?>
                 </div>
 
                 <div class="flex min-w-0 flex-1 flex-col gap-[22px] sm:gap-[26px]">
@@ -112,7 +112,7 @@ include __DIR__ . '/includes/head.php';
                         <section class="rounded-[15px] bg-white p-2.5 backdrop-blur-[6px] sm:rounded-[20px] sm:p-4 md:rounded-[30px] md:p-[25px]">
                             <?php
                             $matches = $dashboardMatches;
-                            include __DIR__ . '/includes/components/predictions.php';
+                            include __DIR__ . '/../includes/components/predictions.php';
                             ?>
                         </section>
                     <?php else: ?>
@@ -216,4 +216,4 @@ include __DIR__ . '/includes/head.php';
     </div>
 </div>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

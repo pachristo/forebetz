@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/../includes/config.php';
 
 $pageTitle = 'Account Overview — Forebetz';
 $pageDescription = 'Edit your Forebetz account profile, contact details, and password.';
@@ -23,18 +23,18 @@ $profile = [
 $dashboardActive = 'account';
 $countries = ['Nigeria', 'United Kingdom', 'Ghana', 'Kenya', 'South Africa'];
 
-include __DIR__ . '/includes/head.php';
+include __DIR__ . '/../includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/../includes/header.php'; ?>
 
         <?php /* Mobile 382:84376 / Desktop 387:91561 — Account Overview */ ?>
         <main class="w-full px-2.5 py-5 sm:px-5 sm:py-6 lg:px-5 lg:pb-10 lg:pt-0">
             <div class="mx-auto flex w-full max-w-site flex-col gap-2.5 rounded-[20px] bg-[#dedede] p-2.5 sm:gap-[26px] sm:p-5 lg:flex-row lg:items-stretch lg:p-5">
                 <div class="hidden lg:block">
-                    <?php include __DIR__ . '/includes/components/dashboard-sidebar.php'; ?>
+                    <?php include __DIR__ . '/../includes/components/dashboard-sidebar.php'; ?>
                 </div>
 
                 <div class="flex min-w-0 flex-1 flex-col items-stretch gap-2.5 rounded-[21px] bg-white p-2.5 sm:items-center sm:justify-center sm:gap-[26px] sm:rounded-[20px] sm:p-5 md:p-6 lg:p-8">
@@ -204,4 +204,4 @@ include __DIR__ . '/includes/head.php';
 })();
 </script>
 
-<?php include __DIR__ . '/includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
