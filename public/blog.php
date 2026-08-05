@@ -2,7 +2,7 @@
 /**
  * Blog listing — Figma 342:16904 (desktop) / 477:70692 (mobile + tablet)
  */
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $pageTitle = 'Forebetz Blog — Latest Sport News & Betting Insights';
 $pageDescription = 'Stay on top of every moment with the latest sport news, match previews, and betting insights from Forebetz.';
@@ -55,12 +55,12 @@ $biography = array_fill(0, 5, [
     'href' => $detailHref,
 ]);
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden pb-20 lg:pb-0">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <?php /* Mobile/tablet hero — Figma 477:70692: Forebetz gold, Blog white */ ?>
         <section class="w-full px-2.5 pt-5 sm:px-8 lg:px-[100px] lg:pt-2.5">
@@ -84,14 +84,14 @@ include __DIR__ . '/../includes/head.php';
                         <?php
                         $title = 'Top Stories';
                         $moreHref = '#top-stories';
-                        include __DIR__ . '/../includes/components/blog-section-header.php';
+                        include __DIR__ . '/includes/components/blog-section-header.php';
                         ?>
                         <div class="-mx-0.5 mt-2.5 flex gap-2.5 overflow-x-auto pb-1 lg:mx-0 lg:grid lg:grid-cols-4 lg:overflow-visible lg:pb-0">
                             <?php foreach ($topStories as $post): ?>
                                 <div class="w-[250px] shrink-0 lg:w-auto lg:min-w-0">
                                     <?php
                                     $variant = 'compact';
-                                    include __DIR__ . '/../includes/components/blog-news-card.php';
+                                    include __DIR__ . '/includes/components/blog-news-card.php';
                                     ?>
                                 </div>
                             <?php endforeach; ?>
@@ -102,13 +102,13 @@ include __DIR__ . '/../includes/head.php';
                         <?php
                         $variant = 'large';
                         $post = $featured;
-                        include __DIR__ . '/../includes/components/blog-news-card.php';
+                        include __DIR__ . '/includes/components/blog-news-card.php';
                         ?>
                         <div class="grid grid-cols-2 gap-2.5">
                             <?php foreach ($featuredPair as $post): ?>
                                 <?php
                                 $variant = 'medium';
-                                include __DIR__ . '/../includes/components/blog-news-card.php';
+                                include __DIR__ . '/includes/components/blog-news-card.php';
                                 ?>
                             <?php endforeach; ?>
                         </div>
@@ -122,13 +122,13 @@ include __DIR__ . '/../includes/head.php';
                             <?php
                             $variant = 'large';
                             $post = $featured;
-                            include __DIR__ . '/../includes/components/blog-news-card.php';
+                            include __DIR__ . '/includes/components/blog-news-card.php';
                             ?>
                             <div class="grid grid-cols-2 gap-5">
                                 <?php foreach ($featuredPair as $post): ?>
                                     <?php
                                     $variant = 'medium';
-                                    include __DIR__ . '/../includes/components/blog-news-card.php';
+                                    include __DIR__ . '/includes/components/blog-news-card.php';
                                     ?>
                                 <?php endforeach; ?>
                             </div>
@@ -139,14 +139,14 @@ include __DIR__ . '/../includes/head.php';
                                 <?php
                                 $title = $category['title'];
                                 $moreHref = '#' . strtolower(str_replace(' ', '-', $category['title']));
-                                include __DIR__ . '/../includes/components/blog-section-header.php';
+                                include __DIR__ . '/includes/components/blog-section-header.php';
                                 ?>
                                 <?php /* Stack until desktop; 3-col from lg */ ?>
                                 <div class="mt-2.5 flex flex-col gap-5 lg:grid lg:grid-cols-3">
                                     <?php foreach ($category['posts'] as $post): ?>
                                         <?php
                                         $variant = 'grid';
-                                        include __DIR__ . '/../includes/components/blog-news-card.php';
+                                        include __DIR__ . '/includes/components/blog-news-card.php';
                                         ?>
                                     <?php endforeach; ?>
                                 </div>
@@ -158,13 +158,13 @@ include __DIR__ . '/../includes/head.php';
                             <?php
                             $title = 'Biography';
                             $moreHref = '#biography';
-                            include __DIR__ . '/../includes/components/blog-section-header.php';
+                            include __DIR__ . '/includes/components/blog-section-header.php';
                             ?>
                             <div class="mt-2.5 flex flex-col gap-2.5">
                                 <?php foreach ($biography as $post): ?>
                                     <?php
                                     $variant = 'list';
-                                    include __DIR__ . '/../includes/components/blog-news-card.php';
+                                    include __DIR__ . '/includes/components/blog-news-card.php';
                                     ?>
                                 <?php endforeach; ?>
                             </div>
@@ -176,13 +176,13 @@ include __DIR__ . '/../includes/head.php';
                             <?php
                             $title = 'Biography';
                             $moreHref = '#biography';
-                            include __DIR__ . '/../includes/components/blog-section-header.php';
+                            include __DIR__ . '/includes/components/blog-section-header.php';
                             ?>
                             <div class="mt-2.5 flex flex-col gap-2.5">
                                 <?php foreach ($biography as $post): ?>
                                     <?php
                                     $variant = 'list';
-                                    include __DIR__ . '/../includes/components/blog-news-card.php';
+                                    include __DIR__ . '/includes/components/blog-news-card.php';
                                     ?>
                                 <?php endforeach; ?>
                             </div>
@@ -194,4 +194,4 @@ include __DIR__ . '/../includes/head.php';
     </div>
 </div>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

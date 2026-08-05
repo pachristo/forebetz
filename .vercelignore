@@ -1,4 +1,6 @@
+# Prefer Root Directory = "public" in Vercel project settings
+# (this file is used when Root Directory is the repo root)
 .git
 .vercel
-README.md
 *.md
+api

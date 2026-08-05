@@ -2,17 +2,17 @@
 /**
  * Contact Us — Figma 354:33003 (desktop); stacks for mobile (477:80794)
  */
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $pageTitle = 'Contact Us — Forebetz';
 $pageDescription = 'Reach Forebetz by email or phone, or send us a message and we will get back to you.';
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden pb-20 lg:pb-0">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
@@ -130,5 +130,5 @@ include __DIR__ . '/../includes/head.php';
         </main>
 <?php
 $embedFooterInPageShell = true;
-include __DIR__ . '/../includes/footer.php';
+include __DIR__ . '/includes/footer.php';
 ?>

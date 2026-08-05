@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $matchDetail = [
     'page_title' => 'Benfica vs Club Brugge',
@@ -277,12 +277,12 @@ $conclusion = 'Forebetz is the most sure football prediction site in the world a
 $pageTitle = $matchDetail['page_title'] . ' — Forebetz Football Predictions';
 $pageDescription = $matchDetail['page_subtitle'];
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <section class="w-full px-2.5 pt-2 sm:px-8 lg:px-[100px]">
             <div class="mx-auto flex w-full max-w-site flex-col items-center px-1 py-3 text-center sm:px-0 sm:py-5">
@@ -298,11 +298,11 @@ include __DIR__ . '/../includes/head.php';
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site rounded-[16px] bg-[#f0f0f0] p-2.5 text-[#1e1e1e] sm:rounded-[24px] sm:p-6 md:rounded-[30px] md:p-8 lg:px-[150px] lg:py-10">
                 <div class="mx-auto flex w-full max-w-[1228px] flex-col gap-3 sm:gap-4 lg:gap-5">
-                    <?php include __DIR__ . '/../includes/components/match-detail.php'; ?>
+                    <?php include __DIR__ . '/includes/components/match-detail.php'; ?>
                 </div>
             </div>
         </main>
     </div>
 </div>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

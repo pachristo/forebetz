@@ -1,7 +1,6 @@
 <?php
 /**
- * Vercel PHP front controller.
- * Routes all non-asset requests to the matching file under /public.
+ * Vercel PHP front controller (Root Directory = public).
  */
 declare(strict_types=1);
 
@@ -16,7 +15,7 @@ if (str_contains($path, '..')) {
     exit;
 }
 
-$publicRoot = realpath(__DIR__ . '/../public');
+$publicRoot = realpath(__DIR__ . '/..');
 if ($publicRoot === false) {
     http_response_code(500);
     header('Content-Type: text/plain; charset=UTF-8');
@@ -28,6 +27,17 @@ if ($path === '/' || $path === '') {
     $relative = 'index.php';
 } else {
     $relative = ltrim($path, '/');
+    // Never route the api entry into itself / protect includes
+    if (
+        $relative === 'api/index.php'
+        || str_starts_with($relative, 'api/')
+        || str_starts_with($relative, 'includes/')
+    ) {
+        http_response_code(404);
+        header('Content-Type: text/plain; charset=UTF-8');
+        echo 'Not found';
+        exit;
+    }
     if (!str_ends_with($relative, '.php')) {
         $withPhp = $relative . '.php';
         if (is_file($publicRoot . '/' . $withPhp)) {

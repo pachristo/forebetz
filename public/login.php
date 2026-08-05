@@ -1,10 +1,10 @@
 <?php
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $pageTitle = 'Login — Forebetz';
 $pageDescription = 'Log in to your Forebetz account to access predictions, VIP packages, and your dashboard.';
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 
 ob_start();
 ?>
@@ -65,7 +65,7 @@ ob_start();
                         </p>
 <?php
 $authContent = ob_get_clean();
-include __DIR__ . '/../includes/components/auth-shell.php';
+include __DIR__ . '/includes/components/auth-shell.php';
 ?>
 
 <script>
@@ -84,5 +84,5 @@ include __DIR__ . '/../includes/components/auth-shell.php';
 <?php
 $hideSiteFooter = true;
 $hideMobileNav = true;
-include __DIR__ . '/../includes/footer.php';
+include __DIR__ . '/includes/footer.php';
 ?>

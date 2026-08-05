@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $leagueName = 'Serie A';
 $leagueCountry = 'Italy';
@@ -99,19 +99,19 @@ $leagueFaqIntro = 'Where can I find 99 percent football prediction site? Forebet
 
 $leagueConclusion = 'Forebetz is the most sure football prediction site in the world and the only site that predicts football matches correctly. We do more than prediction sites that never lose and we make a responsibility to give you a sure win prediction for today. When next you are searching for 100 sure football prediction site, sure football prediction site for today, sure football prediction site free, 99 percent football prediction site, sure football prediction site correct score, hot prediction site, surest prediction site, top 5 prediction site, sure prediction, 90 accurate football predictions, 100 sure football predictions for weekend, 100 sure football prediction site in the world, site that predict football matches correctly, 100 sure football predictions, most sure football prediction site in the world, prediction site that never lose, best prediction site, and sure win prediction today. At Forebetz we offer reliable free football predictions for our punters to select and bet at their favourite bookmaker that offers the best odds.';
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/../includes/header.php'; ?>
-        <?php include __DIR__ . '/../includes/components/league-hero.php'; ?>
+        <?php include __DIR__ . '/includes/header.php'; ?>
+        <?php include __DIR__ . '/includes/components/league-hero.php'; ?>
 
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site rounded-[20px] bg-[#f0f0f0] p-2.5 text-[#1e1e1e] sm:rounded-[24px] sm:p-6 md:rounded-[30px] md:p-8 lg:p-10">
                 <div class="flex flex-col gap-5 sm:gap-7 lg:flex-row lg:items-start lg:gap-[30px]">
                     <div class="min-w-0 flex-1">
-                        <?php include __DIR__ . '/../includes/components/league-stats.php'; ?>
+                        <?php include __DIR__ . '/includes/components/league-stats.php'; ?>
 
                         <section class="mt-4 sm:mt-6">
                             <h2 class="mb-2 text-[18px] font-medium leading-tight text-[#1e1e1e] sm:mb-4 sm:text-[24px] md:text-[28px] lg:text-[32px]">
@@ -119,7 +119,7 @@ include __DIR__ . '/../includes/head.php';
                             </h2>
                             <div class="flex flex-col gap-2.5">
                                 <?php foreach ($upcomingMatches as $match): ?>
-                                    <?php include __DIR__ . '/../includes/components/match-card.php'; ?>
+                                    <?php include __DIR__ . '/includes/components/match-card.php'; ?>
                                 <?php endforeach; ?>
                             </div>
                         </section>
@@ -130,19 +130,19 @@ include __DIR__ . '/../includes/head.php';
                             </h2>
                             <div class="flex flex-col gap-2.5">
                                 <?php foreach ($previousMatches as $match): ?>
-                                    <?php include __DIR__ . '/../includes/components/match-card.php'; ?>
+                                    <?php include __DIR__ . '/includes/components/match-card.php'; ?>
                                 <?php endforeach; ?>
                             </div>
                         </section>
 
-                        <?php include __DIR__ . '/../includes/components/league-seo.php'; ?>
+                        <?php include __DIR__ . '/includes/components/league-seo.php'; ?>
                     </div>
 
-                    <?php include __DIR__ . '/../includes/components/sidebar.php'; ?>
+                    <?php include __DIR__ . '/includes/components/sidebar.php'; ?>
                 </div>
             </div>
         </main>
     </div>
 </div>
 
-<?php include __DIR__ . '/../includes/footer.php'; ?>
+<?php include __DIR__ . '/includes/footer.php'; ?>

@@ -2,7 +2,7 @@
 /**
  * About Us — Figma 353:32380 (desktop); stacks for mobile/tablet
  */
-require_once __DIR__ . '/../includes/config.php';
+require_once __DIR__ . '/includes/config.php';
 
 $pageTitle = 'About Us — Forebetz';
 $pageDescription = 'Who Forebetz are and what we offer: free football predictions every day across top leagues.';
@@ -17,12 +17,12 @@ $markets = [
     'BTTS/GG',
 ];
 
-include __DIR__ . '/../includes/head.php';
+include __DIR__ . '/includes/head.php';
 ?>
 
 <div class="relative min-h-screen overflow-x-hidden pb-20 lg:pb-0">
     <div class="relative z-10 flex flex-col">
-        <?php include __DIR__ . '/../includes/header.php'; ?>
+        <?php include __DIR__ . '/includes/header.php'; ?>
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
@@ -61,7 +61,7 @@ include __DIR__ . '/../includes/head.php';
 
                         <?php /* Logo card — between sections on mobile; sidebar on desktop via order */ ?>
                         <div class="flex justify-center lg:hidden">
-                            <?php include __DIR__ . '/../includes/components/about-logo-card.php'; ?>
+                            <?php include __DIR__ . '/includes/components/about-logo-card.php'; ?>
                         </div>
 
                         <section class="flex flex-col gap-2.5">
@@ -103,12 +103,12 @@ include __DIR__ . '/../includes/head.php';
                     </div>
 
                     <aside class="hidden shrink-0 lg:block">
-                        <?php include __DIR__ . '/../includes/components/about-logo-card.php'; ?>
+                        <?php include __DIR__ . '/includes/components/about-logo-card.php'; ?>
                     </aside>
                 </div>
             </div>
         </main>
 <?php
 $embedFooterInPageShell = true;
-include __DIR__ . '/../includes/footer.php';
+include __DIR__ . '/includes/footer.php';
 ?>
