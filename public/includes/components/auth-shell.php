@@ -17,7 +17,7 @@ $authContent = $authContent ?? '';
                 <aside class="relative hidden min-h-[520px] flex-1 overflow-hidden rounded-[25px] lg:block">
                     <img
                         src="<?= $asset ?>/images/register-hero.png"
-                        alt="Surest Prediction Site in the World. Forebetz is your best surest prediction site for 100 football predictions, sure six straight win and daily expert tips."
+                        alt="Surest Prediction Site in the World. Dailysuretips is your best surest prediction site for 100 football predictions, sure six straight win and daily expert tips."
                         class="absolute inset-0 h-full w-full rounded-[25px] object-cover"
                     >
                 </aside>

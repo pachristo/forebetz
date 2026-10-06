@@ -11,7 +11,7 @@ $planResults = $planResults ?? [
 ?>
 <section id="invest" class="relative mt-8 overflow-hidden rounded-[20px] p-4 sm:mt-12 sm:rounded-[30px] sm:p-[25px]">
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div class="absolute inset-0 rounded-[20px] bg-[#0a111d] sm:rounded-[30px]"></div>
+        <div class="absolute inset-0 rounded-[20px] bg-[#0a0a0a] sm:rounded-[30px]"></div>
         <img
             src="<?= $asset ?>/images/invest-bg.png"
             alt=""
@@ -29,7 +29,7 @@ $planResults = $planResults ?? [
             </p>
             <a
                 href="#subscribe"
-                class="mt-1 inline-flex w-full max-w-[308px] items-center justify-center gap-2 rounded-[16px] bg-gradient-to-b from-[#b48701] to-[#967000] p-4 backdrop-blur-[7.25px] sm:gap-2.5 sm:rounded-[20px] sm:p-5"
+                class="mt-1 inline-flex w-full max-w-[308px] items-center justify-center gap-2 rounded-[16px] bg-gradient-to-b from-[#cc5400] to-[#a34300] p-4 backdrop-blur-[7.25px] sm:gap-2.5 sm:rounded-[20px] sm:p-5"
             >
                 <span class="size-5 shrink-0 overflow-hidden sm:size-[22px]">
                     <img src="<?= $asset ?>/icons/trophy-emoji.svg" alt="" class="h-full w-full object-contain">

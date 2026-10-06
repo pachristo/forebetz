@@ -7,7 +7,7 @@
             type="search"
             name="q"
             placeholder="Search teams, leagues..."
-            class="w-full rounded-full border-0 bg-white px-5 py-3.5 text-[15px] text-[#1e1e1e] placeholder:text-[#9ca3af] outline-none ring-0 focus:ring-2 focus:ring-[#fcbd02]"
+            class="w-full rounded-full border-0 bg-white px-5 py-3.5 text-[15px] text-[#1e1e1e] placeholder:text-[#9ca3af] outline-none ring-0 focus:ring-2 focus:ring-[#ff6900]"
         >
     </form>
 
@@ -65,7 +65,7 @@
             $tabs = ['ENG', 'SPA', 'GER', 'ITA', 'FRA'];
             foreach ($tabs as $i => $tab):
             ?>
-                <button type="button" class="flex-1 rounded-lg px-1 py-2 text-[12px] font-semibold sm:text-[13px] <?= $i === 0 ? 'bg-[#162640] text-white' : 'bg-[#f5f5f5] text-[#5a5a5a]' ?>">
+                <button type="button" class="flex-1 rounded-lg px-1 py-2 text-[12px] font-semibold sm:text-[13px] <?= $i === 0 ? 'bg-[#1a1a1a] text-white' : 'bg-[#f5f5f5] text-[#5a5a5a]' ?>">
                     <?= $tab ?>
                 </button>
             <?php endforeach; ?>
@@ -83,7 +83,7 @@
                 </thead>
                 <tbody>
                     <?php foreach ($leagueTable as $i => $row): ?>
-                        <tr class="border-t border-[#f0f0f0] <?= $i === 0 ? 'bg-[#e8f0fe]' : '' ?>">
+                        <tr class="border-t border-[#f0f0f0] <?= $i === 0 ? 'bg-[#fff0e6]' : '' ?>">
                             <td class="px-3 py-2 font-semibold"><?= (int) $row['pos'] ?></td>
                             <td class="px-2 py-2">
                                 <div class="flex items-center gap-2">
@@ -110,7 +110,7 @@
         </div>
         <div class="flex gap-1 border-b border-[#eee] px-2 py-2">
             <?php foreach ($tabs as $i => $tab): ?>
-                <button type="button" class="flex-1 rounded-lg px-1 py-2 text-[12px] font-semibold sm:text-[13px] <?= $i === 0 ? 'bg-[#162640] text-white' : 'bg-[#f5f5f5] text-[#5a5a5a]' ?>">
+                <button type="button" class="flex-1 rounded-lg px-1 py-2 text-[12px] font-semibold sm:text-[13px] <?= $i === 0 ? 'bg-[#1a1a1a] text-white' : 'bg-[#f5f5f5] text-[#5a5a5a]' ?>">
                     <?= $tab ?>
                 </button>
             <?php endforeach; ?>

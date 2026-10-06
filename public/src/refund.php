@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Refund Policy — Forebetz Legal Terms';
-$pageDescription = 'Forebetz refund policy for prediction packages, service credits, and exceptional circumstances.';
+$pageTitle = 'Refund Policy — Dailysuretips Legal Terms';
+$pageDescription = 'Dailysuretips refund policy for prediction packages, service credits, and exceptional circumstances.';
 $lastUpdated = 'December 13, 2025';
 
 include __DIR__ . '/../includes/head.php';
@@ -14,7 +14,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
-                <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     Refund Policy
                 </h1>
                 <p class="mt-1 text-[14px] font-normal text-white sm:mt-1.5 sm:text-[16px] sm:leading-7 lg:text-[18px]">
@@ -26,7 +26,7 @@ include __DIR__ . '/../includes/head.php';
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto flex w-full max-w-site flex-col gap-6 rounded-[20px] bg-[#f0f0f0] px-[15px] py-5 text-[#1e1e1e] sm:gap-8 sm:rounded-[30px] sm:px-10 sm:py-8 lg:gap-[30px] lg:px-[150px] lg:py-10">
                 <div class="flex flex-col gap-5 sm:gap-6 lg:gap-[30px]">
-                    <div class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff8e6] px-4 py-2.5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] sm:px-5 sm:py-4 lg:p-5">
+                    <div class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff0e6] px-4 py-2.5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] sm:px-5 sm:py-4 lg:p-5">
                         <div class="flex items-center gap-2 pt-0.5 pr-2">
                             <span class="size-6 shrink-0 overflow-hidden">
                                 <img src="<?= $asset ?>/icons/calendar-duotone.svg" alt="" class="h-full w-full object-contain">
@@ -42,7 +42,7 @@ include __DIR__ . '/../includes/head.php';
                             1. Our Commitment
                         </h2>
                         <p class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            At Forebetz, we're dedicated to providing accurate football predictions and expert betting tips. Due to the digital nature of our services and the inherent unpredictability of sports outcomes, we maintain a strict no-refund policy for our prediction services.
+                            At Dailysuretips, we're dedicated to providing accurate football predictions and expert betting tips. Due to the digital nature of our services and the inherent unpredictability of sports outcomes, we maintain a strict no-refund policy for our prediction services.
                         </p>
                     </section>
 
@@ -112,7 +112,7 @@ include __DIR__ . '/../includes/head.php';
                             7. Policy Updates
                         </h2>
                         <p class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            Forebetz reserves the right to modify this refund policy at any time. Any changes will be effective immediately upon posting on our website. Your continued use of our services constitutes acceptance of the updated policy.
+                            Dailysuretips reserves the right to modify this refund policy at any time. Any changes will be effective immediately upon posting on our website. Your continued use of our services constitutes acceptance of the updated policy.
                         </p>
                     </section>
                 </div>
@@ -153,7 +153,7 @@ include __DIR__ . '/../includes/head.php';
                             <div class="min-w-0 flex-1 text-[14px] leading-7 sm:text-[18px] sm:leading-7 lg:text-[20px]">
                                 <p class="font-medium text-[#1e1e1e]">Responsible Gambling:</p>
                                 <p class="text-[#ef1410]">
-                                    Forebetz encourages responsible gambling. Please remember that sports betting should be done for entertainment purposes only. Never wager more than you can afford to lose. If you feel you may have a gambling problem, please seek help from professional organizations in your area.
+                                    Dailysuretips encourages responsible gambling. Please remember that sports betting should be done for entertainment purposes only. Never wager more than you can afford to lose. If you feel you may have a gambling problem, please seek help from professional organizations in your area.
                                 </p>
                             </div>
                         </div>

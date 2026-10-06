@@ -4,8 +4,8 @@
  */
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Forebetz Blog — Latest Sport News & Betting Insights';
-$pageDescription = 'Stay on top of every moment with the latest sport news, match previews, and betting insights from Forebetz.';
+$pageTitle = 'Dailysuretips Blog — Latest Sport News & Betting Insights';
+$pageDescription = 'Stay on top of every moment with the latest sport news, match previews, and betting insights from Dailysuretips.';
 
 $metaStamp = 'December 8, 22:00 • 5d';
 $featuredTitle = 'Nigeria Football Club Officially launches its websites with amazing features';
@@ -62,11 +62,11 @@ include __DIR__ . '/../includes/head.php';
     <div class="relative z-10 flex flex-col">
         <?php include __DIR__ . '/../includes/header.php'; ?>
 
-        <?php /* Mobile/tablet hero — Figma 477:70692: Forebetz gold, Blog white */ ?>
+        <?php /* Mobile/tablet hero — Figma 477:70692: Dailysuretips gold, Blog white */ ?>
         <section class="w-full px-2.5 pt-5 sm:px-8 lg:px-[100px] lg:pt-2.5">
             <div class="mx-auto w-full max-w-site py-0 lg:py-5">
                 <h1 class="text-[32px] font-medium leading-tight lg:text-[48px]">
-                    <span class="text-[#fcbd02]">Forebetz</span>
+                    <span class="text-[#ff6900]">Dailysuretips</span>
                     <span class="text-white"> Blog</span>
                 </h1>
                 <p class="mt-1 text-[14px] font-normal leading-normal text-white lg:mt-1.5 lg:text-[18px] lg:leading-7">

@@ -3,14 +3,14 @@
         Which Site Gives Sure Football Predictions?
     </h2>
     <p class="mb-4 text-[15px] leading-7 text-[#303030] sm:text-[16px]">
-        Looking for reliable football predictions? Forebetz is built for bettors who want clear tips across 1X2, over/under, BTTS, double chance, and correct score markets. Our analysts review form, head-to-head data, injuries, and odds movement to publish daily free predictions and premium packages.
+        Looking for reliable football predictions? Dailysuretips is built for bettors who want clear tips across 1X2, over/under, BTTS, double chance, and correct score markets. Our analysts review form, head-to-head data, injuries, and odds movement to publish daily free predictions and premium packages.
     </p>
     <p class="mb-6 text-[15px] leading-7 text-[#303030] sm:text-[16px]">
-        Whether you follow the Premier League, La Liga, Serie A, Bundesliga, or Champions League, Forebetz brings fixtures, odds, and tip selections into one dark-themed prediction hub designed for speed and clarity.
+        Whether you follow the Premier League, La Liga, Serie A, Bundesliga, or Champions League, Dailysuretips brings fixtures, odds, and tip selections into one dark-themed prediction hub designed for speed and clarity.
     </p>
 
     <h3 class="mb-3 text-[20px] font-bold text-[#ef1410] sm:text-[22px]">
-        Why Choose Forebetz Prediction Site?
+        Why Choose Dailysuretips Prediction Site?
     </h3>
     <p class="mb-6 text-[15px] leading-7 text-[#303030] sm:text-[16px]">
         We combine free daily tips with optional VIP access for banker tips and correct score selections. Track recent winnings, explore league tables, and follow sports articles that explain the reasoning behind big-match picks.
@@ -34,6 +34,6 @@
 
     <h3 class="mb-3 mt-8 text-[20px] font-bold text-[#ef1410] sm:text-[22px]">Conclusion</h3>
     <p class="text-[15px] leading-7 text-[#303030] sm:text-[16px]">
-        Forebetz remains focused on transparent tips, useful match data, and a clean experience for football fans. Join WhatsApp or Telegram, review today’s free predictions, and subscribe when you want deeper premium coverage.
+        Dailysuretips remains focused on transparent tips, useful match data, and a clean experience for football fans. Join WhatsApp or Telegram, review today’s free predictions, and subscribe when you want deeper premium coverage.
     </p>
 </section>

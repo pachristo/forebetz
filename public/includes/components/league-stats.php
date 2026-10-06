@@ -30,7 +30,7 @@ $leagueStats = $leagueStats ?? [
                 <div class="h-px w-full bg-[#dadde2] lg:hidden" aria-hidden="true"></div>
             <?php endif; ?>
             <div class="flex w-full min-w-0 flex-1 flex-col items-center">
-                <p class="py-0.5 text-center text-[16px] font-semibold capitalize tracking-[0.032px] text-[#162640] lg:text-[18px] lg:tracking-[0.036px]">
+                <p class="py-0.5 text-center text-[16px] font-semibold capitalize tracking-[0.032px] text-[#1a1a1a] lg:text-[18px] lg:tracking-[0.036px]">
                     <?= htmlspecialchars($stat['title']) ?>
                 </p>
                 <div class="flex w-full items-center justify-center gap-5 px-2.5 lg:p-2.5">

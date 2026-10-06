@@ -7,8 +7,8 @@ require_once __DIR__ . '/../includes/config.php';
  */
 $subscriptionActive = isset($_GET['active']) && $_GET['active'] === '1';
 
-$pageTitle = 'Dashboard — Forebetz';
-$pageDescription = 'Your Forebetz dashboard. Manage your plan, packages, and support.';
+$pageTitle = 'Dashboard — Dailysuretips';
+$pageDescription = 'Your Dailysuretips dashboard. Manage your plan, packages, and support.';
 
 $loggedInUser = [
     'name' => 'Michael Adalikwu',
@@ -76,7 +76,7 @@ include __DIR__ . '/../includes/head.php';
 
                         <div class="relative w-full shrink-0 overflow-hidden rounded-[17px] px-3 py-2 sm:rounded-[20px] sm:px-[15px] sm:py-2.5 lg:w-[419px]">
                             <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-                                <div class="absolute inset-0 rounded-[17px] bg-[#0a111d] sm:rounded-[20px]"></div>
+                                <div class="absolute inset-0 rounded-[17px] bg-[#0a0a0a] sm:rounded-[20px]"></div>
                                 <img src="<?= $asset ?>/images/hero-bg.png" alt="" class="absolute inset-0 size-full rounded-[17px] object-cover opacity-20 backdrop-blur-[3.65px] sm:rounded-[20px]">
                             </div>
                             <div class="relative z-10 flex flex-col gap-2 sm:gap-2.5">
@@ -92,7 +92,7 @@ include __DIR__ . '/../includes/head.php';
                                                 Active
                                             </span>
                                         <?php else: ?>
-                                            <span class="inline-flex w-fit items-center justify-center rounded-[17px] bg-gradient-to-b from-[#ffd700] to-[#d9b700] px-4 py-0.5 text-[14px] font-semibold text-[#1e1e1e] sm:rounded-[20px] sm:px-[18px] sm:py-[3px] sm:text-[16px]">
+                                            <span class="inline-flex w-fit items-center justify-center rounded-[17px] bg-gradient-to-b from-[#ff7a1a] to-[#ff6900] px-4 py-0.5 text-[14px] font-semibold text-[#1e1e1e] sm:rounded-[20px] sm:px-[18px] sm:py-[3px] sm:text-[16px]">
                                                 Inactive
                                             </span>
                                         <?php endif; ?>
@@ -125,7 +125,7 @@ include __DIR__ . '/../includes/head.php';
 
                             <div class="relative overflow-hidden rounded-[20px] sm:rounded-[26px] md:rounded-[30px]">
                                 <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-                                    <div class="absolute inset-0 rounded-[20px] bg-[#162640] sm:rounded-[26px] md:rounded-[30px]"></div>
+                                    <div class="absolute inset-0 rounded-[20px] bg-[#1a1a1a] sm:rounded-[26px] md:rounded-[30px]"></div>
                                     <img
                                         src="<?= $asset ?>/images/packages-bg.png"
                                         alt=""
@@ -135,7 +135,7 @@ include __DIR__ . '/../includes/head.php';
 
                                 <div class="relative z-10 overflow-hidden rounded-[20px] p-3 sm:rounded-[26px] sm:p-[13px] md:rounded-[30px] md:p-[15px]">
                                     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-                                        <div class="absolute inset-0 rounded-[20px] bg-[#0a111d] sm:rounded-[26px] md:rounded-[30px]"></div>
+                                        <div class="absolute inset-0 rounded-[20px] bg-[#0a0a0a] sm:rounded-[26px] md:rounded-[30px]"></div>
                                         <img
                                             src="<?= $asset ?>/images/invest-bg.png"
                                             alt=""
@@ -148,10 +148,10 @@ include __DIR__ . '/../includes/head.php';
 
                                         <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[15px]">
                                             <?php foreach ($inactivePackages as $pkg): ?>
-                                                <article class="flex flex-col rounded-[22px] border-[1.5px] border-[#ff312d] bg-gradient-to-b from-[#162640] to-[#163540] p-1 backdrop-blur-[6px] sm:rounded-[25px] sm:border-2 sm:p-[5px]">
+                                                <article class="flex flex-col rounded-[22px] border-[1.5px] border-[#ff312d] bg-gradient-to-b from-[#1a1a1a] to-[#262626] p-1 backdrop-blur-[6px] sm:rounded-[25px] sm:border-2 sm:p-[5px]">
                                                     <div class="flex min-h-0 flex-col gap-[15px] p-4 sm:min-h-[244px] sm:gap-[17px] sm:p-5">
                                                         <div class="flex flex-col gap-2 pb-2 sm:gap-2.5 sm:pb-2.5">
-                                                            <span class="inline-flex w-fit rounded-[4px] bg-[#fcbd02] px-2 py-1 text-[13px] font-medium text-black sm:rounded-[5px] sm:px-2.5 sm:text-[15px]">
+                                                            <span class="inline-flex w-fit rounded-[4px] bg-[#ff6900] px-2 py-1 text-[13px] font-medium text-black sm:rounded-[5px] sm:px-2.5 sm:text-[15px]">
                                                                 <?= htmlspecialchars($pkg['badge']) ?>
                                                             </span>
                                                             <h3 class="text-[22px] font-medium text-[#f0f0f0] sm:text-[26px]">
@@ -172,7 +172,7 @@ include __DIR__ . '/../includes/head.php';
                                                     <a
                                                         href="/payment.php?plan=<?= urlencode($pkg['plan']) ?>"
                                                         class="mb-1 mx-1 flex h-[47px] items-center justify-center gap-2 rounded-[17px] px-6 text-[14px] font-bold uppercase text-black sm:mb-[5px] sm:mx-[5px] sm:h-[54px] sm:rounded-[20px] sm:px-8 sm:text-[16px]"
-                                                        style="background-image: linear-gradient(106deg, #ffc108 13%, #c39202 101%);"
+                                                        style="background-image: linear-gradient(106deg, #ff7a1a 13%, #cc5400 101%);"
                                                     >
                                                         subscribe
                                                         <span class="size-[21px] shrink-0 overflow-hidden sm:size-6">
@@ -195,7 +195,7 @@ include __DIR__ . '/../includes/head.php';
                             </h2>
                         </div>
                         <div class="px-3 py-4 sm:px-[30px] sm:py-5">
-                            <div class="flex flex-col gap-3 rounded-[16px] border-l-4 border-[#ef1410] bg-[#fff8e6] p-4 sm:gap-6 sm:rounded-[20px] sm:p-[25px]">
+                            <div class="flex flex-col gap-3 rounded-[16px] border-l-4 border-[#ef1410] bg-[#fff0e6] p-4 sm:gap-6 sm:rounded-[20px] sm:p-[25px]">
                                 <div class="flex min-w-0 flex-1 flex-col gap-2.5">
                                     <p class="text-[14px] font-normal leading-6 text-[#1e1e1e] sm:text-[18px] sm:leading-7 md:text-[20px] md:leading-7">
                                         Our support team is here to help with any questions or issues you might have.

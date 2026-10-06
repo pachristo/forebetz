@@ -9,8 +9,8 @@ $plans = [
 ];
 $plan = $plans[$planKey] ?? $plans['weekly'];
 
-$pageTitle = 'Premium Plan Payment — Forebetz';
-$pageDescription = 'Choose your preferred payment method to activate your Forebetz VIP Plan.';
+$pageTitle = 'Premium Plan Payment — Dailysuretips';
+$pageDescription = 'Choose your preferred payment method to activate your Dailysuretips VIP Plan.';
 
 $paymentMethods = [
     [
@@ -59,7 +59,7 @@ include __DIR__ . '/../includes/head.php';
             <div class="mx-auto flex w-full max-w-site flex-col gap-[15px]">
 
                 <div class="flex flex-col gap-[3px] py-3 sm:gap-[5px] sm:py-5">
-                    <h1 class="text-[30px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                    <h1 class="text-[30px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                         Premium Plan
                     </h1>
                     <p class="text-[15px] font-normal leading-[17.5px] text-white sm:text-[16px] sm:leading-7 lg:text-[18px] lg:leading-7">
@@ -85,7 +85,7 @@ include __DIR__ . '/../includes/head.php';
                                     <p class="text-[20px] font-medium text-[#a77900] sm:text-[21px]">
                                         ⏵ PREMIUM → <?= htmlspecialchars($plan['label']) ?>
                                     </p>
-                                    <p class="font-medium text-[#04292d]">
+                                    <p class="font-medium text-[#1e1e1e]">
                                         <span class="text-[37px] sm:text-[38px]">$<?= htmlspecialchars($plan['price']) ?></span><span class="text-[13px] sm:text-[14px]">/ <?= htmlspecialchars($plan['duration']) ?></span>
                                     </p>
                                 </div>
@@ -113,14 +113,14 @@ include __DIR__ . '/../includes/head.php';
                                                 <div class="flex flex-col gap-5">
                                                     <div class="flex flex-col gap-[5px] text-[15px] sm:text-[16px]">
                                                         <p class="font-normal tracking-[0.2px] text-[#5a5a5a]">Amount:</p>
-                                                        <p class="font-bold text-[#04292d]"><?= htmlspecialchars($method['amount']) ?></p>
+                                                        <p class="font-bold text-[#1e1e1e]"><?= htmlspecialchars($method['amount']) ?></p>
                                                     </div>
                                                     <div class="flex flex-col gap-[5px]">
                                                         <p class="text-[15px] font-normal tracking-[0.2px] text-[#5a5a5a] sm:text-[16px]">
                                                             <?= htmlspecialchars($method['field_label']) ?>
                                                         </p>
                                                         <div class="flex min-w-0 items-center gap-2.5">
-                                                            <p class="min-w-0 break-all text-[15px] font-bold leading-normal text-[#04292d] sm:text-[16px]">
+                                                            <p class="min-w-0 break-all text-[15px] font-bold leading-normal text-[#1e1e1e] sm:text-[16px]">
                                                                 <?= htmlspecialchars($method['field_value']) ?>
                                                             </p>
                                                             <button
@@ -143,7 +143,7 @@ include __DIR__ . '/../includes/head.php';
                                                     </p>
                                                     <div class="text-[13px] font-normal leading-normal text-[#303030] sm:text-[14px]">
                                                         <p class="mb-2">
-                                                            After a successful transaction, Kindly Forward us an email containing “Your Forebetz
+                                                            After a successful transaction, Kindly Forward us an email containing “Your Dailysuretips
                                                             <strong>Account Email</strong>,
                                                             <strong>Amount Paid</strong>, and
                                                             <strong>Teller Number</strong>
@@ -157,7 +157,7 @@ include __DIR__ . '/../includes/head.php';
 
                                     <a
                                         href="/dashboard.php"
-                                        class="flex w-full items-center justify-center rounded-[15px] bg-[#fcbd02] px-[30px] py-[15px] text-center text-[18px] font-medium tracking-[0.2px] text-[#1e1e1e] backdrop-blur-[7.45px] hover:brightness-95 sm:text-[19px]"
+                                        class="flex w-full items-center justify-center rounded-[15px] bg-[#ff6900] px-[30px] py-[15px] text-center text-[18px] font-medium tracking-[0.2px] text-[#1e1e1e] backdrop-blur-[7.45px] hover:brightness-95 sm:text-[19px]"
                                     >
                                         I Have Sent the Money
                                     </a>

@@ -5,7 +5,7 @@
 require_once __DIR__ . '/../includes/config.php';
 
 $postTitle = '10 of the most wasted talents in football. The world at their feet';
-$pageTitle = $postTitle . ' — Forebetz Blog';
+$pageTitle = $postTitle . ' — Dailysuretips Blog';
 $pageDescription = 'Stay on top of every moment with free Live Football Scores, lightning fast goals, cards, and match events all in one place.';
 $postLead = 'Stay on top of every moment with free Live Football Scores, lightning fast goals, cards, and match events all in one place.';
 $postDate = '21 Jan 2025';
@@ -72,9 +72,9 @@ include __DIR__ . '/../includes/head.php';
                     class="flex items-center gap-1 py-[7px] text-center tracking-[0.14px] lg:gap-1.5 lg:py-2.5 lg:tracking-[0.2px]"
                     aria-label="Breadcrumb"
                 >
-                    <a href="/blog.php" class="text-[14px] font-normal text-white lg:text-[20px]">Forebetz Blog</a>
+                    <a href="/blog.php" class="text-[14px] font-normal text-white lg:text-[20px]">Dailysuretips Blog</a>
                     <span class="text-[11px] font-semibold text-[#767676] lg:text-[16px]" aria-hidden="true">/</span>
-                    <span class="text-[14px] font-normal text-[#fcbd02] lg:text-[20px]">Blog</span>
+                    <span class="text-[14px] font-normal text-[#ff6900] lg:text-[20px]">Blog</span>
                 </nav>
             </div>
         </section>

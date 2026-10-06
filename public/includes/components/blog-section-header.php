@@ -15,11 +15,11 @@ $titleClass = $titleClass ?? 'text-[16px] lg:text-[20px]';
 /** @var string $moreClass Optional more-link size override */
 $moreClass = $moreClass ?? 'text-[10px] lg:text-[14px]';
 ?>
-<div class="flex w-full items-center overflow-hidden border-b border-[#fcbd02] pb-2.5">
+<div class="flex w-full items-center overflow-hidden border-b border-[#ff6900] pb-2.5">
     <h2 class="min-w-0 flex-1 font-semibold tracking-[0.2px] text-[#303030] <?= htmlspecialchars($titleClass) ?>">
         <?= htmlspecialchars($title) ?>
     </h2>
-    <a href="<?= htmlspecialchars($moreHref) ?>" class="inline-flex shrink-0 items-center tracking-[0.2px] text-[#fcbd02] <?= htmlspecialchars($moreClass) ?>">
+    <a href="<?= htmlspecialchars($moreHref) ?>" class="inline-flex shrink-0 items-center tracking-[0.2px] text-[#ff6900] <?= htmlspecialchars($moreClass) ?>">
         <?= htmlspecialchars($moreLabel) ?>
         <span class="size-6 shrink-0 overflow-hidden">
             <img src="<?= $asset ?>/icons/chevron-right-gold.svg" alt="" class="h-full w-full object-contain">

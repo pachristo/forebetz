@@ -15,7 +15,7 @@ $leagueOptions = $leagueOptions ?? ['Serie A', 'Premier League', 'La Liga', 'Bun
                 <img src="<?= $asset ?>/leagues/<?= htmlspecialchars($leagueLogo) ?>" alt="" class="h-full w-full object-contain">
             </div>
             <div class="min-w-0 flex flex-1 flex-col gap-0 sm:gap-1.5">
-                <h1 class="truncate text-[32px] font-semibold leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="truncate text-[32px] font-semibold leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     <?= htmlspecialchars($leagueName) ?>
                 </h1>
                 <p class="text-[15px] font-normal leading-5 text-white sm:text-[18px] lg:text-[20px]">
@@ -27,7 +27,7 @@ $leagueOptions = $leagueOptions ?? ['Serie A', 'Premier League', 'La Liga', 'Bun
         <label class="relative inline-flex w-[176px] shrink-0 items-center sm:w-[200px] lg:w-[241px]">
             <span class="sr-only">Select league</span>
             <select
-                class="w-full appearance-none rounded-[7px] bg-white py-1.5 pl-2 pr-8 text-[13px] text-[#303030] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:rounded-[10px] sm:py-2.5 sm:pl-2.5 sm:pr-10 sm:text-[16px] lg:text-[18px]"
+                class="w-full appearance-none rounded-[7px] bg-white py-1.5 pl-2 pr-8 text-[13px] text-[#303030] outline-none focus:ring-2 focus:ring-[#ff6900] sm:rounded-[10px] sm:py-2.5 sm:pl-2.5 sm:pr-10 sm:text-[16px] lg:text-[18px]"
                 aria-label="Select league"
             >
                 <?php foreach ($leagueOptions as $opt): ?>

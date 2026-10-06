@@ -2,8 +2,8 @@
 /**
  * Category / market page hero. Override via $categoryTitle, $categoryDesc.
  */
-$categoryTitle = $categoryTitle ?? 'Forebetz Acca tips';
-$categoryDesc = $categoryDesc ?? 'Forebetz Acca tips tips predictions today.';
+$categoryTitle = $categoryTitle ?? 'Dailysuretips Acca tips';
+$categoryDesc = $categoryDesc ?? 'Dailysuretips Acca tips tips predictions today.';
 ?>
 <section class="relative z-10 w-full px-2.5 pb-4 pt-2 sm:px-8 lg:px-[100px]">
     <div class="mx-auto flex w-full max-w-site flex-col gap-4 rounded-[30px] py-4 sm:gap-5 sm:py-5">
@@ -12,9 +12,9 @@ $categoryDesc = $categoryDesc ?? 'Forebetz Acca tips tips predictions today.';
                 <div class="flex flex-col gap-1 text-white sm:gap-1.5">
                     <h1 class="text-[28px] font-medium leading-tight sm:text-[40px] lg:text-[48px]">
                         <?php
-                        if (stripos($categoryTitle, 'Forebetz') === 0) {
-                            $rest = trim(substr($categoryTitle, strlen('Forebetz')));
-                            echo '<span class="text-[#fcbd02]">Forebetz</span> ' . htmlspecialchars($rest);
+                        if (stripos($categoryTitle, 'Dailysuretips') === 0) {
+                            $rest = trim(substr($categoryTitle, strlen('Dailysuretips')));
+                            echo '<span class="text-[#ff6900]">Dailysuretips</span> ' . htmlspecialchars($rest);
                         } else {
                             echo htmlspecialchars($categoryTitle);
                         }
@@ -40,11 +40,11 @@ $categoryDesc = $categoryDesc ?? 'Forebetz Acca tips tips predictions today.';
                 </div>
             </div>
             <div class="hidden min-h-[180px] w-full items-center justify-center self-stretch bg-white px-8 py-16 lg:flex lg:w-[530px] lg:shrink-0">
-                <p class="text-center text-[24px] text-[#162640]">Ads Section</p>
+                <p class="text-center text-[24px] text-[#1a1a1a]">Ads Section</p>
             </div>
         </div>
         <div class="flex h-[95px] w-full items-center justify-center bg-white px-6 sm:h-auto sm:py-8">
-            <p class="text-center text-[17px] text-[#162640] sm:text-[24px]">Ads Section</p>
+            <p class="text-center text-[17px] text-[#1a1a1a] sm:text-[24px]">Ads Section</p>
         </div>
     </div>
 </section>

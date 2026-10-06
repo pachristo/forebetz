@@ -272,9 +272,9 @@ $standings = [
     ['pos' => 12, 'club' => 'Luton', 'logo' => 'luton.png', 'gp' => 14, 'w' => 1, 'd' => 3, 'l' => 10, 'g' => '10 - 30', 'gd' => '-20', 'pts' => 6, 'form' => ['l', 'd', 'l', 'l', 'l'], 'zone' => 'rel'],
 ];
 
-$conclusion = 'Forebetz is the most sure football prediction site in the world and the only site that predicts football matches correctly. We do more than prediction sites that never lose and we make a responsibility to give you a sure win prediction for today. When next you are searching for 100 sure football prediction site, sure football prediction site for today, sure football prediction site free, 99 percent football prediction site, sure football prediction site correct score, hot prediction site, surest prediction site, top 5 prediction site, sure prediction, 90 accurate football predictions, 100 sure football predictions for weekend, 100 sure football prediction site in the world, site that predict football matches correctly, 100 sure football predictions, most sure football prediction site in the world, prediction site that never lose, best prediction site, and sure win prediction today. At Forebetz we offer reliable free football predictions for our punters to select and bet at their favourite bookmaker that offers the best odds.';
+$conclusion = 'Dailysuretips is the most sure football prediction site in the world and the only site that predicts football matches correctly. We do more than prediction sites that never lose and we make a responsibility to give you a sure win prediction for today. When next you are searching for 100 sure football prediction site, sure football prediction site for today, sure football prediction site free, 99 percent football prediction site, sure football prediction site correct score, hot prediction site, surest prediction site, top 5 prediction site, sure prediction, 90 accurate football predictions, 100 sure football predictions for weekend, 100 sure football prediction site in the world, site that predict football matches correctly, 100 sure football predictions, most sure football prediction site in the world, prediction site that never lose, best prediction site, and sure win prediction today. At Dailysuretips we offer reliable free football predictions for our punters to select and bet at their favourite bookmaker that offers the best odds.';
 
-$pageTitle = $matchDetail['page_title'] . ' — Forebetz Football Predictions';
+$pageTitle = $matchDetail['page_title'] . ' — Dailysuretips Football Predictions';
 $pageDescription = $matchDetail['page_subtitle'];
 
 include __DIR__ . '/../includes/head.php';
@@ -286,7 +286,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 lg:px-[100px]">
             <div class="mx-auto flex w-full max-w-site flex-col items-center px-1 py-3 text-center sm:px-0 sm:py-5">
-                <h1 class="text-[24px] font-semibold leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[54px]">
+                <h1 class="text-[24px] font-semibold leading-tight text-[#ff6900] sm:text-[40px] lg:text-[54px]">
                     <?= htmlspecialchars($matchDetail['page_title']) ?>
                 </h1>
                 <p class="mt-1.5 max-w-[836px] text-[13px] leading-snug text-white sm:mt-2.5 sm:text-[16px] lg:text-[18px]">

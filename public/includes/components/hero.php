@@ -4,10 +4,10 @@
             <div class="flex w-full max-w-[836px] flex-col gap-4 sm:gap-5">
                 <div class="flex flex-col gap-1 text-white sm:gap-1.5">
                     <h1 class="text-[28px] font-medium leading-tight sm:text-[40px] lg:text-[48px]">
-                        <span class="text-[#fcbd02]">Forebetz </span>Prediction Site in the World
+                        <span class="text-[#ff6900]">Dailysuretips </span>Prediction Site in the World
                     </h1>
                     <p class="text-[14px] font-normal leading-normal text-white sm:text-[16px] sm:leading-7 lg:text-[18px]">
-                        Forebetz offers best football predictions and soccer betting tips in different betting markets like; over 2.5 goals, double chance, BTTS/GG, correct score, draw, and banker tips predictions today.
+                        Dailysuretips offers best football predictions and soccer betting tips in different betting markets like; over 2.5 goals, double chance, BTTS/GG, correct score, draw, and banker tips predictions today.
                     </p>
                 </div>
                 <div class="flex w-full flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-2.5">
@@ -26,11 +26,11 @@
                 </div>
             </div>
             <div class="hidden min-h-[180px] w-full items-center justify-center self-stretch bg-white px-8 py-16 lg:flex lg:w-[530px] lg:shrink-0">
-                <p class="text-center text-[24px] text-[#162640]">Ads Section</p>
+                <p class="text-center text-[24px] text-[#1a1a1a]">Ads Section</p>
             </div>
         </div>
         <div class="flex h-[132px] w-full items-center justify-center bg-white px-6 sm:h-auto sm:py-8">
-            <p class="text-center text-[17px] text-[#162640] sm:text-[24px]">Ads Section</p>
+            <p class="text-center text-[17px] text-[#1a1a1a] sm:text-[24px]">Ads Section</p>
         </div>
     </div>
 </section>

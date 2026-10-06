@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Partners — Forebetz Sponsorship and Partners';
-$pageDescription = 'Forebetz sponsorship and partner brands. Explore our betting and tips partners.';
+$pageTitle = 'Partners — Dailysuretips Sponsorship and Partners';
+$pageDescription = 'Dailysuretips sponsorship and partner brands. Explore our betting and tips partners.';
 
 $partners = [
     'Bet Winning Tips',
@@ -24,7 +24,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
-                <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     Partners
                 </h1>
                 <p class="mt-1 text-[15px] font-normal leading-[17px] text-white sm:mt-1.5 sm:text-[16px] sm:leading-7 lg:text-[18px]">
@@ -40,7 +40,7 @@ include __DIR__ . '/../includes/head.php';
                     <?php foreach ($partners as $partner): ?>
                         <a
                             href="#"
-                            class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff8e6] p-5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] transition hover:brightness-[0.98]"
+                            class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff0e6] p-5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] transition hover:brightness-[0.98]"
                         >
                             <span class="flex items-center gap-2 pt-0.5 pr-2">
                                 <span class="size-6 shrink-0 overflow-hidden">

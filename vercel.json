@@ -7,6 +7,10 @@
   },
   "routes": [
     {
+      "src": "/favicon.ico",
+      "dest": "/public/assets/images/brand/favicon.ico"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/public/assets/$1"
     },

@@ -2,7 +2,7 @@
 /**
  * Mobile native bottom nav — Figma 570:38958
  * Visible below lg only.
- * Items: Home, Livescores, Blog, Menu (opens drawer), Login|Dashboard
+ * Items: Home, Tips category (left drawer), Blog, Menu, Login|Dashboard
  *
  * @var string $asset
  * @var array|null $loggedInUser
@@ -26,12 +26,11 @@ $mobileNavItems = [
         'active' => $currentPath === '/' || $currentPath === '/index.php',
     ],
     [
-        'id' => 'live',
-        'type' => 'link',
-        'label' => 'Livescores',
-        'href' => '/live.php',
-        'icon' => 'mobile-nav/live.svg',
-        'active' => $currentPath === '/live.php',
+        'id' => 'tips',
+        'type' => 'tips',
+        'label' => "Tips\ncategory",
+        'icon' => 'nav-tips.svg',
+        'active' => $currentPath === '/category.php',
     ],
     [
         'id' => 'blog',
@@ -58,15 +57,18 @@ $mobileNavItems = [
     ],
 ];
 ?>
-<nav class="fixed inset-x-0 bottom-0 z-40 bg-[#162640] px-[15px] py-2.5 lg:hidden" aria-label="Mobile primary">
-    <div class="mx-auto flex h-16 w-full max-w-site items-center justify-between rounded-[20px] backdrop-blur-[7.45px]">
+<nav class="fixed inset-x-0 bottom-0 z-40 bg-[#1a1a1a] px-2 py-2 lg:hidden" aria-label="Mobile primary" data-mobile-bottom-nav>
+    <div class="mx-auto flex min-h-16 w-full max-w-site items-center justify-between gap-0.5 rounded-[20px] backdrop-blur-[7.45px]">
         <?php foreach ($mobileNavItems as $item): ?>
             <?php
-            $itemClass = 'flex flex-col items-center justify-center gap-[5px] p-2.5 backdrop-blur-[7.25px] '
-                . ($item['active'] ? 'rounded-[15px] border-b-4 border-[#fcbd02] bg-[rgba(255,255,255,0.14)]' : 'rounded-[7px]');
-            $labelClass = 'text-[14px] font-normal tracking-[0.2px] ' . ($item['active'] ? 'text-white' : 'text-[#f3f3f3]');
+            $itemClass = 'flex min-w-0 flex-1 flex-col items-center justify-center gap-1 px-0.5 py-1.5 backdrop-blur-[7.25px] '
+                . ($item['active'] ? 'rounded-[15px] border-b-4 border-[#ff6900] bg-[rgba(255,255,255,0.14)]' : 'rounded-[7px]');
+            $labelClass = 'w-full whitespace-pre-line text-center text-[11px] font-normal leading-[1.15] tracking-[0.1px] '
+                . ($item['active'] ? 'text-white' : 'text-[#f3f3f3]');
+            $type = $item['type'] ?? 'link';
+            $labelHtml = nl2br(htmlspecialchars($item['label']), false);
             ?>
-            <?php if (($item['type'] ?? 'link') === 'menu'): ?>
+            <?php if ($type === 'menu'): ?>
                 <button
                     type="button"
                     class="<?= $itemClass ?>"
@@ -77,7 +79,21 @@ $mobileNavItems = [
                     <span class="size-[18px] shrink-0 overflow-hidden">
                         <img src="<?= $asset ?>/icons/<?= htmlspecialchars($item['icon']) ?>" alt="" class="h-full w-full object-contain">
                     </span>
-                    <span class="<?= $labelClass ?>"><?= htmlspecialchars($item['label']) ?></span>
+                    <span class="<?= $labelClass ?>"><?= $labelHtml ?></span>
+                </button>
+            <?php elseif ($type === 'tips'): ?>
+                <button
+                    type="button"
+                    class="<?= $itemClass ?>"
+                    data-open-tips-categories
+                    aria-label="Open tips category"
+                    aria-expanded="false"
+                    aria-controls="tips-categories-drawer"
+                >
+                    <span class="size-[18px] shrink-0 overflow-hidden">
+                        <img src="<?= $asset ?>/icons/<?= htmlspecialchars($item['icon']) ?>" alt="" class="h-full w-full object-contain">
+                    </span>
+                    <span class="<?= $labelClass ?>"><?= $labelHtml ?></span>
                 </button>
             <?php else: ?>
                 <a
@@ -88,19 +104,10 @@ $mobileNavItems = [
                     <span class="size-[18px] shrink-0 overflow-hidden">
                         <img src="<?= $asset ?>/icons/<?= htmlspecialchars($item['icon']) ?>" alt="" class="h-full w-full object-contain">
                     </span>
-                    <span class="<?= $labelClass ?>"><?= htmlspecialchars($item['label']) ?></span>
+                    <span class="<?= $labelClass ?>"><?= $labelHtml ?></span>
                 </a>
             <?php endif; ?>
         <?php endforeach; ?>
     </div>
 </nav>
-<div class="h-[84px] lg:hidden" aria-hidden="true"></div>
-<script>
-(() => {
-  document.querySelectorAll('[data-open-mobile-menu]').forEach((el) => {
-    el.addEventListener('click', () => {
-      document.getElementById('mobile-menu-btn')?.click();
-    });
-  });
-})();
-</script>
+<div class="h-[92px] lg:hidden" aria-hidden="true"></div>

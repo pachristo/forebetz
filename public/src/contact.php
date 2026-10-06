@@ -4,8 +4,8 @@
  */
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Contact Us — Forebetz';
-$pageDescription = 'Reach Forebetz by email or phone, or send us a message and we will get back to you.';
+$pageTitle = 'Contact Us — Dailysuretips';
+$pageDescription = 'Reach Dailysuretips by email or phone, or send us a message and we will get back to you.';
 
 include __DIR__ . '/../includes/head.php';
 ?>
@@ -16,7 +16,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
-                <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     Contact Us
                 </h1>
                 <p class="mt-1 text-[14px] font-normal leading-normal text-white sm:mt-1.5 sm:text-[16px] sm:leading-7 lg:text-[18px] lg:leading-7">
@@ -37,7 +37,7 @@ include __DIR__ . '/../includes/head.php';
                         <div class="flex flex-col gap-3 sm:gap-5">
                             <a
                                 href="mailto:forebetz@gmail.com"
-                                class="flex w-full items-center rounded-[12px] border-l-[2.5px] border-[#162640] bg-[#e8e9ec] p-3 sm:rounded-[20px] sm:border-l-4 sm:p-5"
+                                class="flex w-full items-center rounded-[12px] border-l-[2.5px] border-[#1a1a1a] bg-[#e8e9ec] p-3 sm:rounded-[20px] sm:border-l-4 sm:p-5"
                             >
                                 <span class="flex min-w-0 flex-1 items-start gap-[19px] sm:gap-[30px]">
                                     <img
@@ -56,7 +56,7 @@ include __DIR__ . '/../includes/head.php';
 
                             <a
                                 href="tel:+234817126112612"
-                                class="flex w-full items-center rounded-[12px] border-l-[2.5px] border-[#162640] bg-[#e8e9ec] p-3 sm:rounded-[20px] sm:border-l-4 sm:p-5"
+                                class="flex w-full items-center rounded-[12px] border-l-[2.5px] border-[#1a1a1a] bg-[#e8e9ec] p-3 sm:rounded-[20px] sm:border-l-4 sm:p-5"
                             >
                                 <span class="flex min-w-0 flex-1 items-start gap-[19px] sm:gap-[30px]">
                                     <img
@@ -90,7 +90,7 @@ include __DIR__ . '/../includes/head.php';
                                         name="name"
                                         placeholder="Enter name"
                                         required
-                                        class="w-full rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#fcbd02] sm:py-[15px] sm:text-[17px]"
+                                        class="w-full rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#ff6900] sm:py-[15px] sm:text-[17px]"
                                     >
                                 </label>
 
@@ -101,7 +101,7 @@ include __DIR__ . '/../includes/head.php';
                                         name="email"
                                         placeholder="e.g myemail@gmail.com"
                                         required
-                                        class="w-full rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#fcbd02] sm:py-[15px] sm:text-[17px]"
+                                        class="w-full rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#ff6900] sm:py-[15px] sm:text-[17px]"
                                     >
                                 </label>
 
@@ -112,14 +112,14 @@ include __DIR__ . '/../includes/head.php';
                                         placeholder="Tell us about your needs"
                                         required
                                         rows="6"
-                                        class="min-h-[100px] w-full flex-1 resize-y rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#fcbd02] sm:min-h-[160px] sm:py-[15px] sm:text-[17px]"
+                                        class="min-h-[100px] w-full flex-1 resize-y rounded-[10px] border border-[#d9d9d9] bg-white px-5 py-2.5 text-[15px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#b3b3b3] focus:ring-2 focus:ring-[#ff6900] sm:min-h-[160px] sm:py-[15px] sm:text-[17px]"
                                     ></textarea>
                                 </label>
                             </div>
 
                             <button
                                 type="submit"
-                                class="flex w-full items-center justify-center rounded-[15px] bg-[#fcbd02] px-[42px] py-[15px] text-[15px] font-medium tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 sm:text-[17px]"
+                                class="flex w-full items-center justify-center rounded-[15px] bg-[#ff6900] px-[42px] py-[15px] text-[15px] font-medium tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 sm:text-[17px]"
                             >
                                 Send Message
                             </button>

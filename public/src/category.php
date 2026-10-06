@@ -13,16 +13,16 @@ if ($activeCat === null) {
     $activeCat = $tipCategories[1] ?? ['label' => 'Acca tips', 'slug' => 'acca-tips'];
 }
 
-$categoryTitle = 'Forebetz ' . $activeCat['label'];
-$categoryDesc = 'Forebetz ' . $activeCat['label'] . ' tips predictions today.';
+$categoryTitle = 'Dailysuretips ' . $activeCat['label'];
+$categoryDesc = 'Dailysuretips ' . $activeCat['label'] . ' tips predictions today.';
 $sectionTitle = $activeCat['label'];
 $sectionDate = 'Wed, Mar 19th 2025';
 $includeInvestment = false;
-$pageTitle = $activeCat['label'] . ' — Forebetz Football Predictions';
+$pageTitle = $activeCat['label'] . ' — Dailysuretips Football Predictions';
 $pageDescription = $categoryDesc;
 
 $seoHeading = $activeCat['label'];
-$seoIntro = 'Forebetz is a sure football prediction site in the world and the only site that predicts football matches correctly and we are dedicated to providing sure win predictions for today. Use ' . $activeCat['label'] . ' on this page to build smarter selections with researched tips across top leagues.';
+$seoIntro = 'Dailysuretips is a sure football prediction site in the world and the only site that predicts football matches correctly and we are dedicated to providing sure win predictions for today. Use ' . $activeCat['label'] . ' on this page to build smarter selections with researched tips across top leagues.';
 
 include __DIR__ . '/../includes/head.php';
 ?>

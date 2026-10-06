@@ -13,7 +13,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
             <div class="flex h-16 items-center gap-2.5 px-[15px] py-5">
                 <a
                     href="/"
-                    class="flex items-center gap-1.5 p-2.5 text-[16px] tracking-[0.2px] text-white backdrop-blur-[7.25px] <?= $isHome ? 'border-b-4 border-[#fcbd02]' : 'rounded-[7px]' ?>"
+                    class="flex items-center gap-1.5 p-2.5 text-[16px] tracking-[0.2px] text-white backdrop-blur-[7.25px] <?= $isHome ? 'border-b-4 border-[#ff6900]' : 'rounded-[7px]' ?>"
                 >
                     <span class="size-6 shrink-0 overflow-hidden">
                         <img src="<?= $asset ?>/icons/nav-home.svg" alt="" class="h-full w-full object-contain">
@@ -33,14 +33,14 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                             <span class="size-6 shrink-0 overflow-hidden">
                                 <img src="<?= $asset ?>/icons/nav-tips.svg" alt="" class="h-full w-full object-contain">
                             </span>
-                            Tips Scores
+                            Tips category
                         </span>
                         <span class="size-6 shrink-0 overflow-hidden transition-transform duration-200" data-dropdown-chevron>
                             <img src="<?= $asset ?>/icons/arrow-down.svg" alt="" class="h-full w-full object-contain">
                         </span>
                     </button>
                     <div
-                        class="absolute left-0 top-full z-50 mt-2 hidden w-[237px] overflow-hidden rounded-[10px] bg-[#121e33] p-2.5 shadow-xl backdrop-blur-[36px]"
+                        class="absolute left-0 top-full z-50 mt-2 hidden w-[237px] overflow-hidden rounded-[10px] bg-[#141414] p-2.5 shadow-xl backdrop-blur-[36px]"
                         data-dropdown-panel
                         role="menu"
                     >
@@ -49,7 +49,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                                 <a
                                     href="/category.php?cat=<?= urlencode($cat['slug']) ?>"
                                     role="menuitem"
-                                    class="flex h-[52px] items-center justify-center rounded-[10px] px-[25px] py-2 text-center text-[17px] capitalize tracking-[0.2px] <?= $i === 0 ? 'border border-[#fcbd02] bg-[#fcbd02] font-semibold text-[#1e1e1e]' : 'bg-[rgba(240,240,240,0.12)] font-normal text-[#f3f3f3] hover:bg-[rgba(240,240,240,0.2)]' ?>"
+                                    class="flex h-[52px] items-center justify-center rounded-[10px] px-[25px] py-2 text-center text-[17px] capitalize tracking-[0.2px] <?= $i === 0 ? 'border border-[#ff6900] bg-[#ff6900] font-semibold text-[#1e1e1e]' : 'bg-[rgba(240,240,240,0.12)] font-normal text-[#f3f3f3] hover:bg-[rgba(240,240,240,0.2)]' ?>"
                                 >
                                     <?= htmlspecialchars($cat['label']) ?>
                                 </a>
@@ -93,7 +93,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                         </span>
                     </button>
                     <div
-                        class="absolute right-0 top-full z-50 mt-2 hidden min-w-[180px] overflow-hidden rounded-[10px] bg-[#121e33] p-2.5 shadow-xl backdrop-blur-[36px]"
+                        class="absolute right-0 top-full z-50 mt-2 hidden min-w-[180px] overflow-hidden rounded-[10px] bg-[#141414] p-2.5 shadow-xl backdrop-blur-[36px]"
                         data-dropdown-panel
                         role="menu"
                     >
@@ -112,7 +112,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                 <div class="relative" data-nav-dropdown>
                     <button
                         type="button"
-                        class="flex items-center gap-5 rounded-[15px] border border-[#fcbd02] px-4 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#f3f3f3] backdrop-blur-[7.45px]"
+                        class="flex items-center gap-5 rounded-[15px] border border-[#ff6900] px-4 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#f3f3f3] backdrop-blur-[7.45px]"
                         data-dropdown-trigger
                         aria-expanded="false"
                         aria-haspopup="true"
@@ -126,7 +126,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                         </span>
                     </button>
                     <div
-                        class="absolute right-0 top-full z-50 mt-2 hidden min-w-[180px] overflow-hidden rounded-[10px] bg-[#121e33] p-2.5 shadow-xl backdrop-blur-[36px]"
+                        class="absolute right-0 top-full z-50 mt-2 hidden min-w-[180px] overflow-hidden rounded-[10px] bg-[#141414] p-2.5 shadow-xl backdrop-blur-[36px]"
                         data-dropdown-panel
                         role="menu"
                     >
@@ -139,10 +139,10 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
                     </div>
                 </div>
             <?php else: ?>
-                <a href="/register.php" class="rounded-[15px] border border-[#fcbd02] px-5 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#fcbd02] backdrop-blur-[7.45px]">
+                <a href="/register.php" class="rounded-[15px] border border-[#ff6900] px-5 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#ff6900] backdrop-blur-[7.45px]">
                     Register
                 </a>
-                <a href="/login.php" class="rounded-[15px] bg-[#fcbd02] px-5 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#1e1e1e]">
+                <a href="/login.php" class="rounded-[15px] bg-[#ff6900] px-5 py-[15px] text-[17px] font-medium tracking-[0.2px] text-[#1e1e1e]">
                     Login
                 </a>
             <?php endif; ?>
@@ -151,7 +151,7 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
         <button
             type="button"
             id="mobile-menu-btn"
-            class="flex size-8 items-center justify-center lg:hidden"
+            class="relative z-10 flex size-8 items-center justify-center lg:hidden"
             aria-label="Open menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -161,57 +161,9 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
             </span>
         </button>
     </div>
-
-    <div id="mobile-menu" class="fixed inset-0 z-40 hidden lg:hidden" aria-hidden="true">
-        <button type="button" class="absolute inset-0 bg-black/60" data-close-menu aria-label="Close menu overlay"></button>
-        <div class="absolute right-0 top-0 flex h-full w-[min(320px,86vw)] flex-col gap-4 overflow-y-auto bg-[#0a111d] px-5 py-6 shadow-xl">
-            <div class="flex items-center justify-between">
-                <?php include __DIR__ . '/components/logo.php'; ?>
-                <button type="button" class="text-[28px] leading-none text-white" data-close-menu aria-label="Close menu">&times;</button>
-            </div>
-            <nav class="mt-4 flex flex-col gap-1 text-[16px] text-[#f3f3f3]">
-                <a href="/" class="rounded-lg <?= $isHome ? 'border-l-4 border-[#fcbd02] bg-white/5' : '' ?> px-3 py-3">Home</a>
-
-                <div class="rounded-lg" data-mobile-accordion>
-                    <button type="button" class="flex w-full items-center justify-between px-3 py-3 text-left hover:bg-white/5" data-mobile-accordion-trigger aria-expanded="false">
-                        <span>Tips Scores</span>
-                        <span class="size-5 shrink-0 overflow-hidden transition-transform" data-mobile-accordion-chevron>
-                            <img src="<?= $asset ?>/icons/arrow-down.svg" alt="" class="h-full w-full object-contain">
-                        </span>
-                    </button>
-                    <div class="mb-2 ml-2 hidden flex-col gap-1.5 rounded-[10px] bg-[#121e33] p-2" data-mobile-accordion-panel>
-                        <?php foreach ($tipCategories as $i => $cat): ?>
-                            <a
-                                href="/category.php?cat=<?= urlencode($cat['slug']) ?>"
-                                class="rounded-[10px] px-3 py-3 text-center text-[15px] <?= $i === 0 ? 'bg-[#fcbd02] font-semibold text-[#1e1e1e]' : 'bg-[rgba(240,240,240,0.12)] text-[#f3f3f3]' ?>"
-                            >
-                                <?= htmlspecialchars($cat['label']) ?>
-                            </a>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-
-                <a href="/live.php" class="rounded-lg px-3 py-3 hover:bg-white/5">Livescores</a>
-                <a href="/blog.php" class="rounded-lg px-3 py-3 hover:bg-white/5">Blog</a>
-                <a href="/partners.php" class="rounded-lg px-3 py-3 hover:bg-white/5">Partners</a>
-            </nav>
-            <div class="mt-auto flex flex-col gap-3 pb-4">
-                <?php if (!empty($loggedInUser)): ?>
-                    <a href="/dashboard.php" class="rounded-[15px] bg-[#fcbd02] px-5 py-3.5 text-center text-[16px] font-medium text-[#1e1e1e]">Dashboard</a>
-                    <a href="/" class="rounded-[15px] border border-[#ec221f] px-5 py-3.5 text-center text-[16px] font-medium text-[#ec221f]">Logout</a>
-                <?php else: ?>
-                    <a href="/register.php" class="rounded-[15px] border border-[#fcbd02] px-5 py-3.5 text-center text-[16px] font-medium text-[#fcbd02]">Register</a>
-                    <a href="/login.php" class="rounded-[15px] bg-[#fcbd02] px-5 py-3.5 text-center text-[16px] font-medium text-[#1e1e1e]">Login</a>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
 </header>
 <script>
 (() => {
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-
   document.querySelectorAll('[data-nav-dropdown]').forEach((wrap) => {
     const trigger = wrap.querySelector('[data-dropdown-trigger]');
     const panel = wrap.querySelector('[data-dropdown-panel]');
@@ -247,35 +199,5 @@ $isHome = $currentPath === '/' || $currentPath === '/index.php';
       if (e.key === 'Escape') close();
     });
   });
-
-  document.querySelectorAll('[data-mobile-accordion]').forEach((wrap) => {
-    const trigger = wrap.querySelector('[data-mobile-accordion-trigger]');
-    const panel = wrap.querySelector('[data-mobile-accordion-panel]');
-    const chevron = wrap.querySelector('[data-mobile-accordion-chevron]');
-    if (!trigger || !panel) return;
-    trigger.addEventListener('click', () => {
-      const open = panel.classList.toggle('hidden') === false;
-      panel.classList.toggle('flex', open);
-      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      chevron?.classList.toggle('rotate-180', open);
-    });
-  });
-
-  if (!btn || !menu) return;
-  const openMenu = () => {
-    menu.classList.remove('hidden');
-    menu.setAttribute('aria-hidden', 'false');
-    btn.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
-  };
-  const closeMenu = () => {
-    menu.classList.add('hidden');
-    menu.setAttribute('aria-hidden', 'true');
-    btn.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
-  };
-  btn.addEventListener('click', openMenu);
-  menu.querySelectorAll('[data-close-menu]').forEach((el) => el.addEventListener('click', closeMenu));
-  menu.querySelectorAll('a').forEach((el) => el.addEventListener('click', closeMenu));
 })();
 </script>

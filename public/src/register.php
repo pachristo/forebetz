@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Create Account — Forebetz';
-$pageDescription = 'Register for a Forebetz account to access sure football predictions, daily expert tips, and VIP packages.';
+$pageTitle = 'Create Account — Dailysuretips';
+$pageDescription = 'Register for a Dailysuretips account to access sure football predictions, daily expert tips, and VIP packages.';
 
 $countries = ['Nigeria', 'United Kingdom', 'Ghana', 'Kenya', 'South Africa', 'United States'];
 
@@ -24,7 +24,7 @@ ob_start();
                                             name="full_name"
                                             placeholder="Enter fullname"
                                             required
-                                            class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#fcbd02] lg:text-[14px]"
+                                            class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#ff6900] lg:text-[14px]"
                                         >
                                     </label>
 
@@ -35,7 +35,7 @@ ob_start();
                                             name="email"
                                             placeholder="Enter email"
                                             required
-                                            class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#fcbd02] lg:text-[14px]"
+                                            class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#ff6900] lg:text-[14px]"
                                         >
                                     </label>
 
@@ -63,7 +63,7 @@ ob_start();
                                             <span class="relative">
                                                 <select
                                                     name="country"
-                                                    class="h-10 w-full appearance-none rounded-[8px] border border-[#d9d9d9] bg-white px-2 pr-8 text-[13px] tracking-[0.2px] text-[#828282] outline-none focus:ring-2 focus:ring-[#fcbd02] focus:text-[#1e1e1e] sm:px-3 sm:pr-10 lg:text-[14px]"
+                                                    class="h-10 w-full appearance-none rounded-[8px] border border-[#d9d9d9] bg-white px-2 pr-8 text-[13px] tracking-[0.2px] text-[#828282] outline-none focus:ring-2 focus:ring-[#ff6900] focus:text-[#1e1e1e] sm:px-3 sm:pr-10 lg:text-[14px]"
                                                 >
                                                     <option value="" selected disabled>Select country</option>
                                                     <?php foreach ($countries as $c): ?>
@@ -115,7 +115,7 @@ ob_start();
 
                                 <button
                                     type="submit"
-                                    class="flex h-[52px] w-full items-center justify-center rounded-[10px] bg-[#fcbd02] px-[17px] text-[15px] font-bold tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 lg:text-[16px]"
+                                    class="flex h-[52px] w-full items-center justify-center rounded-[10px] bg-[#ff6900] px-[17px] text-[15px] font-bold tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 lg:text-[16px]"
                                 >
                                     Create Account
                                 </button>
@@ -126,12 +126,12 @@ ob_start();
                                         <span class="pointer-events-none absolute inset-0 overflow-hidden peer-checked:opacity-0">
                                             <img src="<?= $asset ?>/icons/auth/checkbox.svg" alt="" class="h-full w-full object-contain">
                                         </span>
-                                        <span class="pointer-events-none absolute inset-0 hidden items-center justify-center rounded-[5px] border-[1.5px] border-white bg-[#fcbd02] peer-checked:flex">
+                                        <span class="pointer-events-none absolute inset-0 hidden items-center justify-center rounded-[5px] border-[1.5px] border-white bg-[#ff6900] peer-checked:flex">
                                             <span class="text-[12px] font-bold leading-none text-[#1e1e1e]">✓</span>
                                         </span>
                                     </span>
                                     <span class="text-[15px] font-normal leading-5 text-[#f5f5f5] lg:text-[16px]">
-                                        Click here to accept the <a href="/terms.php" class="underline hover:text-[#fcbd02]">Terms &amp; Conditions</a>.
+                                        Click here to accept the <a href="/terms.php" class="underline hover:text-[#ff6900]">Terms &amp; Conditions</a>.
                                     </span>
                                 </label>
                             </form>
@@ -139,7 +139,7 @@ ob_start();
 
                         <p class="px-4 text-center text-[15px] leading-5 lg:text-[16px]">
                             <span class="font-normal text-[#f5f5f5]">I have an account?</span>
-                            <a href="/login.php" class="font-bold text-[#facb00] underline">LOGIN</a>
+                            <a href="/login.php" class="font-bold text-[#ff6900] underline">LOGIN</a>
                         </p>
 <?php
 $authContent = ob_get_clean();

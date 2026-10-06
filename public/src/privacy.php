@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Privacy Policy — Forebetz Legal Terms';
-$pageDescription = 'Forebetz privacy policy explaining how we collect, use, protect, and disclose your information.';
+$pageTitle = 'Privacy Policy — Dailysuretips Legal Terms';
+$pageDescription = 'Dailysuretips privacy policy explaining how we collect, use, protect, and disclose your information.';
 $lastUpdated = 'December 13, 2025';
 
 include __DIR__ . '/../includes/head.php';
@@ -14,7 +14,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
-                <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     Privacy Policy
                 </h1>
                 <p class="mt-1 text-[14px] font-normal text-white sm:mt-1.5 sm:text-[16px] sm:leading-7 lg:text-[18px]">
@@ -26,7 +26,7 @@ include __DIR__ . '/../includes/head.php';
         <main class="w-full px-2.5 pb-8 sm:px-8 sm:pb-10 lg:px-[100px]">
             <div class="mx-auto flex w-full max-w-site flex-col gap-6 rounded-[20px] bg-[#f0f0f0] px-[15px] py-5 text-[#1e1e1e] sm:gap-8 sm:rounded-[30px] sm:px-10 sm:py-8 lg:gap-[30px] lg:px-[150px] lg:py-10">
                 <div class="flex flex-col gap-5 sm:gap-6 lg:gap-[30px]">
-                    <div class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff8e6] px-4 py-2.5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] sm:px-5 sm:py-4 lg:p-5">
+                    <div class="flex w-full items-center border-l-4 border-[#ef1410] bg-[#fff0e6] px-4 py-2.5 shadow-[0_0_0.8px_rgba(0,0,0,0.25)] sm:px-5 sm:py-4 lg:p-5">
                         <div class="flex items-center gap-2 pt-0.5 pr-2">
                             <span class="size-6 shrink-0 overflow-hidden">
                                 <img src="<?= $asset ?>/icons/calendar-duotone.svg" alt="" class="h-full w-full object-contain">
@@ -39,12 +39,12 @@ include __DIR__ . '/../includes/head.php';
 
                     <div class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
                         <p class="mb-3">
-                            What this contains is the bits of the Privacy Policy of Forebetz
+                            What this contains is the bits of the Privacy Policy of Dailysuretips
                             (<a href="/" class="underline">https://www.Forebetz</a>).
                             This is for us to explain how we collect, make use, protect, and disclose the information which you give to us when you are making use of our website or try to interact with the services that we offer.
                         </p>
                         <p>
-                            Kindly take a moment to read the document below carefully. If you do not agree with the terms in this policy, you may need to stop using Forebetz. By continuing to use our site, you are giving your consent to the way we collect and use your information as explained in this privacy policy.
+                            Kindly take a moment to read the document below carefully. If you do not agree with the terms in this policy, you may need to stop using Dailysuretips. By continuing to use our site, you are giving your consent to the way we collect and use your information as explained in this privacy policy.
                         </p>
                     </div>
 
@@ -53,7 +53,7 @@ include __DIR__ . '/../includes/head.php';
                             Information We Collect
                         </h2>
                         <p class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            At Forebetz, we collect and use two main types of information: personal information and non-personal information. Below, we've explained what each of these terms means.
+                            At Dailysuretips, we collect and use two main types of information: personal information and non-personal information. Below, we've explained what each of these terms means.
                         </p>
                     </section>
 
@@ -62,7 +62,7 @@ include __DIR__ . '/../includes/head.php';
                             Personal Information
                         </h2>
                         <div class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            <p class="mb-3">At Forebetz, we only collect personal information when you choose to share it with us. This happens when you fill out our contact forms, send us emails, leave comments, submit guest posts, or sign up for our newsletter.</p>
+                            <p class="mb-3">At Dailysuretips, we only collect personal information when you choose to share it with us. This happens when you fill out our contact forms, send us emails, leave comments, submit guest posts, or sign up for our newsletter.</p>
                             <p class="mb-3">The personal information we may receive from you includes:</p>
                             <ul class="mb-3 list-disc space-y-0 pl-[21px] sm:pl-[27px]">
                                 <li>Your name</li>
@@ -98,7 +98,7 @@ include __DIR__ . '/../includes/head.php';
                                 <li>To know what our visitor behavior is like and what we can identify from their actions.</li>
                                 <li>To keep you from fraud, abuse, or any form of illegal behavior.</li>
                             </ul>
-                            <p>Forebetz is never going to sell your personal data or give them away to any third parties.</p>
+                            <p>Dailysuretips is never going to sell your personal data or give them away to any third parties.</p>
                         </div>
                     </section>
 
@@ -107,7 +107,7 @@ include __DIR__ . '/../includes/head.php';
                             Cookies and Tracking Technologies
                         </h2>
                         <div class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            <p class="mb-3">We use cookies to determine the kind of content you will like and analyze the traffic to our site. There are three kinds of cookies that we accept and make use of here at Forebetz. They include:</p>
+                            <p class="mb-3">We use cookies to determine the kind of content you will like and analyze the traffic to our site. There are three kinds of cookies that we accept and make use of here at Dailysuretips. They include:</p>
                             <ul class="list-disc space-y-0 pl-[21px] sm:pl-[27px]">
                                 <li>Essential Cookies for basic website functions</li>
                                 <li>Performance Cookies for tracking user behavior for analytics</li>
@@ -121,7 +121,7 @@ include __DIR__ . '/../includes/head.php';
                             Google Analytics and Third-Party Tools
                         </h2>
                         <div class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            <p class="mb-3">At Forebetz, we use Google Analytics and a few other tools like it to help us see how our website is doing and understand what our visitors are looking for when they check out our content.</p>
+                            <p class="mb-3">At Dailysuretips, we use Google Analytics and a few other tools like it to help us see how our website is doing and understand what our visitors are looking for when they check out our content.</p>
                             <p class="mb-3">These tools collect things like your IP address, the kind of device and browser you're using, the pages you visit, and how long you stay on each page.</p>
                             <p class="mb-3">They don't collect anything that can personally tell us who you are. But Google may still use the data they collect based on their own Privacy Policy.</p>
                             <p>If you don't want Google Analytics to track your activity, you can stop it by using a browser add-on like the Google Analytics Opt-Out tool, especially if you use Chrome.</p>
@@ -133,7 +133,7 @@ include __DIR__ . '/../includes/head.php';
                             Affiliate and Advertising Partners
                         </h2>
                         <div class="text-[14px] leading-7 text-[#1e1e1e] sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
-                            <p class="mb-3">Forebetz works with different partners and affiliate programs from around the world. This means you'll see some affiliate links and sponsored posts on our site. These partners may use cookies or other tools to track things like if you clicked a link, signed up, or bought something. That's how we earn commissions.</p>
+                            <p class="mb-3">Dailysuretips works with different partners and affiliate programs from around the world. This means you'll see some affiliate links and sponsored posts on our site. These partners may use cookies or other tools to track things like if you clicked a link, signed up, or bought something. That's how we earn commissions.</p>
                             <p>We don't control what these other websites do with your data. So, before you use their sites, it's a good idea to read their privacy policies first.</p>
                         </div>
                     </section>
@@ -175,7 +175,7 @@ include __DIR__ . '/../includes/head.php';
                             <div class="min-w-0 flex-1 text-[14px] leading-7 sm:text-[18px] sm:leading-7 lg:text-[20px]">
                                 <p class="font-medium text-[#1e1e1e]">Note:</p>
                                 <p class="text-[#ef1410]">
-                                    Forebetz is a football prediction platform and does not accept or place bets. Always bet responsibly. Betting involves risk, and it is possible to lose money.
+                                    Dailysuretips is a football prediction platform and does not accept or place bets. Always bet responsibly. Betting involves risk, and it is possible to lose money.
                                 </p>
                             </div>
                         </div>

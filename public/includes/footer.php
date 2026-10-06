@@ -18,7 +18,7 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
                 <div class="flex w-full max-w-[502px] flex-col gap-2.5">
                     <?php include __DIR__ . '/components/logo.php'; ?>
                     <p class="text-[15px] font-normal leading-normal text-white sm:text-[17px]">
-                        Forebetz is your best surest prediction site for 100 football predictions, sure six straight win and daily expert tips.
+                        Dailysuretips is your best surest prediction site for 100 football predictions, sure six straight win and daily expert tips.
                     </p>
                     <a
                         href="#telegram"
@@ -36,10 +36,10 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
                     <div class="flex flex-col gap-4 sm:gap-5">
                         <h4 class="text-[18px] font-bold capitalize text-white sm:text-[21px]">Quick Links</h4>
                         <ul class="flex flex-col gap-1.5 text-[16px] text-white">
-                            <li><a href="/" class="leading-5 hover:text-[#fcbd02]">Home</a></li>
-                            <li><a href="/about.php" class="leading-5 hover:text-[#fcbd02]">About Us</a></li>
-                            <li><a href="/pricing.php" class="leading-5 hover:text-[#fcbd02]">Packages</a></li>
-                            <li><a href="/contact.php" class="leading-5 hover:text-[#fcbd02]">Contact Us</a></li>
+                            <li><a href="/" class="leading-5 hover:text-[#ff6900]">Home</a></li>
+                            <li><a href="/about.php" class="leading-5 hover:text-[#ff6900]">About Us</a></li>
+                            <li><a href="/pricing.php" class="leading-5 hover:text-[#ff6900]">Packages</a></li>
+                            <li><a href="/contact.php" class="leading-5 hover:text-[#ff6900]">Contact Us</a></li>
                         </ul>
                     </div>
 
@@ -48,7 +48,7 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
                         <ul class="flex flex-col gap-1.5 text-[16px] text-white">
                             <?php foreach (($tipCategories ?? []) as $cat): ?>
                                 <li>
-                                    <a href="/category.php?cat=<?= urlencode($cat['slug']) ?>" class="leading-5 hover:text-[#fcbd02]">
+                                    <a href="/category.php?cat=<?= urlencode($cat['slug']) ?>" class="leading-5 hover:text-[#ff6900]">
                                         <?= htmlspecialchars($cat['label']) ?>
                                     </a>
                                 </li>
@@ -59,11 +59,11 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
                     <div class="flex flex-col gap-5">
                         <h4 class="text-[18px] font-bold capitalize text-white sm:text-[21px]">Legal Links</h4>
                         <ul class="flex flex-col gap-1.5 text-[16px] text-white">
-                            <li><a href="/partners.php" class="leading-5 hover:text-[#fcbd02]">Partners</a></li>
-                            <li><a href="/disclaimer.php" class="leading-5 hover:text-[#fcbd02]">Disclaimer</a></li>
-                            <li><a href="/terms.php" class="leading-5 hover:text-[#fcbd02]">Terms &amp; Conditions</a></li>
-                            <li><a href="/privacy.php" class="leading-5 hover:text-[#fcbd02]">Privacy Policy</a></li>
-                            <li><a href="/refund.php" class="leading-5 hover:text-[#fcbd02]">Refund Policy</a></li>
+                            <li><a href="/partners.php" class="leading-5 hover:text-[#ff6900]">Partners</a></li>
+                            <li><a href="/disclaimer.php" class="leading-5 hover:text-[#ff6900]">Disclaimer</a></li>
+                            <li><a href="/terms.php" class="leading-5 hover:text-[#ff6900]">Terms &amp; Conditions</a></li>
+                            <li><a href="/privacy.php" class="leading-5 hover:text-[#ff6900]">Privacy Policy</a></li>
+                            <li><a href="/refund.php" class="leading-5 hover:text-[#ff6900]">Refund Policy</a></li>
                         </ul>
                     </div>
 
@@ -106,7 +106,7 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
 
             <div class="border-t border-[rgba(183,188,196,0.3)] pt-2.5">
                 <p class="text-center text-[14px] leading-5 text-[#e6ecef] sm:text-[18px]">
-                    Copyright © 2025 Forebetz All Rights Reserved.
+                    Copyright © 2025 Dailysuretips All Rights Reserved.
                 </p>
             </div>
         </div>
@@ -121,6 +121,8 @@ $embedFooterInPageShell = !empty($embedFooterInPageShell);
 
 <?php if (!$hideMobileNav): ?>
     <?php include __DIR__ . '/components/mobile-nav.php'; ?>
+    <?php include __DIR__ . '/components/tips-categories-drawer.php'; ?>
 <?php endif; ?>
+<?php include __DIR__ . '/components/mobile-menu.php'; ?>
 </body>
 </html>

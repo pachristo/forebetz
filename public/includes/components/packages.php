@@ -1,6 +1,6 @@
 <section id="subscribe" class="relative mt-6 overflow-hidden rounded-[20px] sm:mt-8 sm:rounded-[30px]">
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-        <div class="absolute inset-0 rounded-[20px] bg-[#162640] sm:rounded-[30px]"></div>
+        <div class="absolute inset-0 rounded-[20px] bg-[#1a1a1a] sm:rounded-[30px]"></div>
         <img
             src="<?= $asset ?>/images/packages-bg.png"
             alt=""
@@ -10,7 +10,7 @@
 
     <div class="relative z-10 overflow-hidden rounded-[20px] p-3 sm:rounded-[30px] sm:p-[15px]">
         <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-            <div class="absolute inset-0 rounded-[20px] bg-[#0a111d] sm:rounded-[30px]"></div>
+            <div class="absolute inset-0 rounded-[20px] bg-[#0a0a0a] sm:rounded-[30px]"></div>
             <img
                 src="<?= $asset ?>/images/invest-bg.png"
                 alt=""
@@ -45,10 +45,10 @@
                 ];
                 foreach ($packages as $pkg):
                 ?>
-                <div class="flex flex-col rounded-[20px] border-2 border-[#ff312d] bg-gradient-to-b from-[#162640] to-[#163540] p-1 backdrop-blur-[7.45px] sm:rounded-[25px] sm:p-[5px]">
+                <div class="flex flex-col rounded-[20px] border-2 border-[#ff312d] bg-gradient-to-b from-[#1a1a1a] to-[#262626] p-1 backdrop-blur-[7.45px] sm:rounded-[25px] sm:p-[5px]">
                     <div class="flex min-h-0 flex-col gap-4 p-4 sm:min-h-[244px] sm:gap-[17px] sm:p-5">
                         <div class="flex flex-col gap-2 pb-2 sm:gap-2.5 sm:pb-2.5">
-                            <span class="inline-flex w-fit rounded-[5px] bg-[#fcbd02] px-2.5 py-1 text-[13px] font-bold text-black sm:text-[15px]">
+                            <span class="inline-flex w-fit rounded-[5px] bg-[#ff6900] px-2.5 py-1 text-[13px] font-bold text-black sm:text-[15px]">
                                 <?= htmlspecialchars($pkg['badge']) ?>
                             </span>
                             <h3 class="text-[22px] font-bold text-[#f0f0f0] sm:text-[26px]">
@@ -69,7 +69,7 @@
                     <a
                         href="#subscribe"
                         class="mb-1 mx-1 flex h-[48px] items-center justify-center gap-2 rounded-[16px] px-6 text-[14px] font-bold uppercase text-black sm:mb-[5px] sm:mx-[5px] sm:h-[54px] sm:rounded-[20px] sm:px-8 sm:text-[16px]"
-                        style="background-image: linear-gradient(109deg, #ffc108 13%, #c39202 101%);"
+                        style="background-image: linear-gradient(109deg, #ff7a1a 13%, #cc5400 101%);"
                     >
                         subscribe
                         <span class="size-5 shrink-0 overflow-hidden sm:size-6">

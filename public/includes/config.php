@@ -2,8 +2,8 @@
 
 $asset = '/assets';
 
-$pageTitle = 'Forebetz — Football Predictions & Betting Tips';
-$pageDescription = 'Forebetz offers best football predictions and soccer betting tips in different betting markets.';
+$pageTitle = 'Dailysuretips — Football Predictions & Betting Tips';
+$pageDescription = 'Dailysuretips offers best football predictions and soccer betting tips in different betting markets.';
 
 $matches = [
     [
@@ -100,11 +100,11 @@ $topScorers = [
 ];
 
 $winnings = [
-    ['home' => 'Liverpool', 'away' => 'Chelsea', 'home_logo' => 'liverpool.png', 'away_logo' => 'chelsea.png', 'score' => '2 - 1', 'pick' => '1', 'odds' => '1.85'],
-    ['home' => 'Arsenal', 'away' => 'Brentford', 'home_logo' => 'arsenal.png', 'away_logo' => 'brentford.png', 'score' => '3 - 0', 'pick' => 'Over 2.5', 'odds' => '1.72'],
-    ['home' => 'Man City', 'away' => 'Luton', 'home_logo' => 'mancity.png', 'away_logo' => 'luton.png', 'score' => '4 - 1', 'pick' => '1', 'odds' => '1.25'],
-    ['home' => 'Newcastle', 'away' => 'Everton', 'home_logo' => 'newcastle.png', 'away_logo' => 'everton.png', 'score' => '2 - 2', 'pick' => 'BTTS', 'odds' => '1.65'],
-    ['home' => 'Fulham', 'away' => 'Burnley', 'home_logo' => 'fulham.png', 'away_logo' => 'burnley.png', 'score' => '1 - 0', 'pick' => '1X', 'odds' => '1.35'],
+    ['home' => 'Liverpool', 'away' => 'Chelsea', 'home_logo' => 'liverpool.png', 'away_logo' => 'chelsea.png', 'score' => '2 - 1', 'pick' => 'Home Win', 'odds' => '1.85', 'date' => '12/02/25'],
+    ['home' => 'Arsenal', 'away' => 'Brentford', 'home_logo' => 'arsenal.png', 'away_logo' => 'brentford.png', 'score' => '3 - 0', 'pick' => 'Over 2.5', 'odds' => '1.72', 'date' => '12/02/25'],
+    ['home' => 'Man City', 'away' => 'Luton', 'home_logo' => 'mancity.png', 'away_logo' => 'luton.png', 'score' => '4 - 1', 'pick' => 'Home Win', 'odds' => '1.25', 'date' => '11/02/25'],
+    ['home' => 'Newcastle', 'away' => 'Everton', 'home_logo' => 'newcastle.png', 'away_logo' => 'everton.png', 'score' => '2 - 2', 'pick' => 'BTTS', 'odds' => '1.65', 'date' => '11/02/25'],
+    ['home' => 'Fulham', 'away' => 'Burnley', 'home_logo' => 'fulham.png', 'away_logo' => 'burnley.png', 'score' => '1 - 0', 'pick' => '1X', 'odds' => '1.35', 'date' => '10/02/25'],
 ];
 
 $articles = [
@@ -128,15 +128,15 @@ $articles = [
 $faqs = [
     [
         'q' => 'Which site gives sure football predictions?',
-        'a' => 'Forebetz provides researched football predictions across major leagues, combining form analysis, stats, and expert tips to help bettors make informed decisions.',
+        'a' => 'Dailysuretips provides researched football predictions across major leagues, combining form analysis, stats, and expert tips to help bettors make informed decisions.',
     ],
     [
-        'q' => 'Are Forebetz predictions free?',
+        'q' => 'Are Dailysuretips predictions free?',
         'a' => 'Yes. Free Football Predictions are available daily with Yesterday, Today, and Tomorrow fixtures. Premium packages unlock deeper markets and correct score tips.',
     ],
     [
         'q' => 'How accurate are the predictions?',
-        'a' => 'No tipster can guarantee 100% accuracy. Forebetz focuses on strong probabilities, recent form, and transparent recent winnings so you can track performance.',
+        'a' => 'No tipster can guarantee 100% accuracy. Dailysuretips focuses on strong probabilities, recent form, and transparent recent winnings so you can track performance.',
     ],
     [
         'q' => 'What markets do you cover?',

@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'VIP Packages — Forebetz Pricing';
-$pageDescription = 'Choose a Forebetz VIP package. Weekly, 2 Weeks, and One Month premium football prediction plans.';
+$pageTitle = 'VIP Packages — Dailysuretips Pricing';
+$pageDescription = 'Choose a Dailysuretips VIP package. Weekly, 2 Weeks, and One Month premium football prediction plans.';
 
 $pricingPlans = [
     [
@@ -54,7 +54,7 @@ include __DIR__ . '/../includes/head.php';
             <div class="mx-auto flex w-full max-w-site flex-col gap-[15px] sm:gap-5 lg:gap-6">
 
                 <div class="flex flex-col gap-1 py-1 sm:gap-1.5 sm:py-2">
-                    <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                    <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                         VIP Packages
                     </h1>
                     <p class="text-[14px] font-normal text-white sm:text-[16px] sm:leading-7 lg:text-[18px]">
@@ -76,7 +76,7 @@ include __DIR__ . '/../includes/head.php';
                             </span>
                             <select
                                 id="pricing-country"
-                                class="w-full appearance-none rounded-[7px] border border-[#d9d9d9] bg-[#e6e6e6] py-2.5 pl-11 pr-10 text-[13px] font-medium text-[#333] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:rounded-[10px] sm:border-0 sm:bg-[#f0f0f0] sm:py-3.5 sm:pl-14 sm:pr-12 sm:text-[15px] sm:text-[#1e1e1e] md:py-4 md:text-[16px]"
+                                class="w-full appearance-none rounded-[7px] border border-[#d9d9d9] bg-[#e6e6e6] py-2.5 pl-11 pr-10 text-[13px] font-medium text-[#333] outline-none focus:ring-2 focus:ring-[#ff6900] sm:rounded-[10px] sm:border-0 sm:bg-[#f0f0f0] sm:py-3.5 sm:pl-14 sm:pr-12 sm:text-[15px] sm:text-[#1e1e1e] md:py-4 md:text-[16px]"
                             >
                                 <?php foreach ($pricingCountries as $c): ?>
                                     <option value="<?= htmlspecialchars($c['flag']) ?>" <?= $c['name'] === 'United Kingdom' ? 'selected' : '' ?>>
@@ -95,7 +95,7 @@ include __DIR__ . '/../includes/head.php';
 
                     <section class="relative overflow-hidden rounded-[24px] sm:rounded-[30px]">
                         <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-                            <div class="absolute inset-0 rounded-[24px] bg-[#162640] sm:rounded-[30px]"></div>
+                            <div class="absolute inset-0 rounded-[24px] bg-[#1a1a1a] sm:rounded-[30px]"></div>
                             <img
                                 src="<?= $asset ?>/images/packages-bg.png"
                                 alt=""
@@ -105,7 +105,7 @@ include __DIR__ . '/../includes/head.php';
 
                         <div class="relative z-10 overflow-hidden rounded-[24px] p-3 sm:rounded-[30px] sm:p-5 md:p-6 lg:p-8">
                             <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-                                <div class="absolute inset-0 rounded-[20px] bg-[#0a111d] sm:rounded-[24px]"></div>
+                                <div class="absolute inset-0 rounded-[20px] bg-[#0a0a0a] sm:rounded-[24px]"></div>
                                 <img
                                     src="<?= $asset ?>/images/invest-bg.png"
                                     alt=""
@@ -125,10 +125,10 @@ include __DIR__ . '/../includes/head.php';
                                 foreach ($pricingPlans as $plan):
                                     $slug = $planSlugs[$plan['badge']] ?? 'weekly';
                                 ?>
-                                    <article class="flex flex-col rounded-[20px] border-[1.5px] border-[#fcbd02] bg-gradient-to-b from-[#162640] to-[#163540] p-1 backdrop-blur-[6px] sm:rounded-[25px] sm:border-2 sm:p-[5px]">
+                                    <article class="flex flex-col rounded-[20px] border-[1.5px] border-[#ff6900] bg-gradient-to-b from-[#1a1a1a] to-[#262626] p-1 backdrop-blur-[6px] sm:rounded-[25px] sm:border-2 sm:p-[5px]">
                                         <div class="flex min-h-0 flex-1 flex-col gap-3.5 p-4 sm:gap-5 sm:p-5">
                                             <div class="flex flex-col gap-2 pb-2 sm:gap-3 sm:pb-0">
-                                                <span class="inline-flex w-fit rounded-[4px] bg-[#fcbd02] px-2 py-1 text-[14px] font-bold text-black sm:rounded-[5px] sm:px-2.5 sm:text-[15px]">
+                                                <span class="inline-flex w-fit rounded-[4px] bg-[#ff6900] px-2 py-1 text-[14px] font-bold text-black sm:rounded-[5px] sm:px-2.5 sm:text-[15px]">
                                                     <?= htmlspecialchars($plan['badge']) ?>
                                                 </span>
                                                 <p class="font-bold leading-none text-[#f0f0f0]">
@@ -149,7 +149,7 @@ include __DIR__ . '/../includes/head.php';
                                         <a
                                             href="/payment.php?plan=<?= urlencode($slug) ?>"
                                             class="mb-1 mx-1 flex h-[42px] items-center justify-center gap-1.5 rounded-[16px] px-6 text-[15px] font-bold uppercase text-black sm:mb-[5px] sm:mx-[5px] sm:h-[54px] sm:gap-2 sm:rounded-[20px] sm:px-8 sm:text-[16px]"
-                                            style="background-image: linear-gradient(109deg, #ffc108 13%, #c39202 101%);"
+                                            style="background-image: linear-gradient(109deg, #ff7a1a 13%, #cc5400 101%);"
                                         >
                                             subscribe
                                             <span class="size-[19px] shrink-0 overflow-hidden sm:size-6">

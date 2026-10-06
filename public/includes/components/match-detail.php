@@ -93,23 +93,23 @@ $resultDot = static function (string $f) use ($asset): string {
             </div>
             <div class="flex items-end justify-between gap-1.5 px-1.5 pb-2.5 pt-0.5 sm:gap-4 sm:px-2.5 sm:pb-3 sm:pt-1">
                 <div class="flex min-w-0 flex-1 flex-col items-center">
-                    <p class="mb-1 text-[11px] font-medium text-[#162640] sm:text-[14px]">Predictions</p>
+                    <p class="mb-1 text-[11px] font-medium text-[#1a1a1a] sm:text-[14px]">Predictions</p>
                     <span
                         class="inline-flex max-w-full items-center justify-center rounded-[9px] px-2 py-2 sm:rounded-[11px] sm:px-3 sm:py-2.5"
-                        style="background-image: linear-gradient(107deg, #fcbd02 0%, #e7ad01 23%, #e3a900 28%, #ebb209 79%, #d39e01 90%);"
+                        style="background-image: linear-gradient(107deg, #ff6900 0%, #f26300 23%, #ee6100 28%, #f56500 79%, #dd5b00 90%);"
                     >
-                        <span class="truncate text-[12px] font-bold text-[#162640] sm:text-[15px]"><?= htmlspecialchars($m['prediction']) ?></span>
-                        <span class="ml-1 shrink-0 text-[11px] font-medium text-[#162640] sm:ml-1.5 sm:text-[15px]">(<?= htmlspecialchars($m['prediction_odds']) ?> odds)</span>
+                        <span class="truncate text-[12px] font-bold text-[#1a1a1a] sm:text-[15px]"><?= htmlspecialchars($m['prediction']) ?></span>
+                        <span class="ml-1 shrink-0 text-[11px] font-medium text-[#1a1a1a] sm:ml-1.5 sm:text-[15px]">(<?= htmlspecialchars($m['prediction_odds']) ?> odds)</span>
                     </span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <p class="mb-1 text-[11px] font-medium text-[#162640] sm:text-[14px]">Scores</p>
+                    <p class="mb-1 text-[11px] font-medium text-[#1a1a1a] sm:text-[14px]">Scores</p>
                     <span class="inline-flex min-w-[48px] items-center justify-center rounded-[9px] border border-[#dadde2] bg-white px-2 py-2 text-[12px] font-semibold text-[#1e1e1e] sm:min-w-[69px] sm:rounded-[11px] sm:px-3 sm:py-2.5 sm:text-[15px]">
                         <?= htmlspecialchars($m['score']) ?>
                     </span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <p class="mb-1 text-[11px] font-medium text-[#162640] sm:text-[14px]">Probability</p>
+                    <p class="mb-1 text-[11px] font-medium text-[#1a1a1a] sm:text-[14px]">Probability</p>
                     <div class="flex items-center gap-1 rounded-[9px] border border-[#dadde2] bg-white px-1.5 py-1.5 sm:gap-1.5 sm:rounded-[11px] sm:px-2.5 sm:py-2">
                         <span class="text-[12px] font-semibold text-[#1e1e1e] sm:text-[14px]"><?= (int) $m['prediction_prob'] ?>%</span>
                         <span class="size-[21px] shrink-0 overflow-hidden sm:size-[26px]">
@@ -127,7 +127,7 @@ $resultDot = static function (string $f) use ($asset): string {
             <div class="grid grid-cols-3 gap-1 px-1 pb-2.5 pt-0.5 sm:gap-2 sm:px-2.5 sm:pb-3 sm:pt-1">
                 <?php foreach ($m['probs'] as $prob): ?>
                     <div class="flex flex-col items-center gap-1 sm:gap-1.5">
-                        <p class="text-[11px] font-medium text-[#162640] sm:text-[14px]"><?= htmlspecialchars($prob['label']) ?></p>
+                        <p class="text-[11px] font-medium text-[#1a1a1a] sm:text-[14px]"><?= htmlspecialchars($prob['label']) ?></p>
                         <div class="flex items-center gap-0.5 sm:gap-1">
                             <span class="text-[12px] font-semibold text-[#1e1e1e] sm:text-[14px]"><?= (int) $prob['pct'] ?>%</span>
                             <span class="size-[21px] shrink-0 overflow-hidden sm:size-[26px]">
@@ -170,7 +170,7 @@ $resultDot = static function (string $f) use ($asset): string {
                 </div>
                 <div class="flex items-center gap-0.5 sm:gap-1">
                     <div class="flex h-2 flex-1 justify-end overflow-hidden rounded-l-full bg-[#f0f0f0] sm:h-[11px]">
-                        <div class="h-full rounded-l-full bg-[#fcbd02]" style="width: <?= (int) $stat['home_w'] ?>%"></div>
+                        <div class="h-full rounded-l-full bg-[#ff6900]" style="width: <?= (int) $stat['home_w'] ?>%"></div>
                     </div>
                     <div class="flex h-2 flex-1 justify-start overflow-hidden rounded-r-full bg-[#f0f0f0] sm:h-[11px]">
                         <div class="h-full rounded-r-full bg-[#c4c4c4]" style="width: <?= (int) $stat['away_w'] ?>%"></div>
@@ -319,7 +319,7 @@ $resultDot = static function (string $f) use ($asset): string {
                     $zoneBorder = match ($team['zone'] ?? '') {
                         'cl' => 'border-l-[3px] border-l-[#14ae5c]',
                         'cl2' => 'border-l-[3px] border-l-[#2b7fff]',
-                        'cl3' => 'border-l-[3px] border-l-[#fcbd02]',
+                        'cl3' => 'border-l-[3px] border-l-[#ff6900]',
                         'rel' => 'border-l-[3px] border-l-[#ef1410]',
                         default => 'border-l-[3px] border-l-transparent',
                     };
@@ -366,7 +366,7 @@ $resultDot = static function (string $f) use ($asset): string {
             <span>Promotion - Champions League (League phase: )</span>
         </div>
         <div class="flex items-center gap-2 sm:gap-3">
-            <span class="size-3 shrink-0 rounded-[3px] bg-[#fcbd02] sm:size-[14px]"></span>
+            <span class="size-3 shrink-0 rounded-[3px] bg-[#ff6900] sm:size-[14px]"></span>
             <span>Promotion - Champions League (League phase: )</span>
         </div>
         <div class="flex items-center gap-2 sm:gap-3">

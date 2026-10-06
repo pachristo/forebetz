@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Forgot Password — Forebetz';
-$pageDescription = 'Reset your Forebetz account password. Enter your email to receive a reset link.';
+$pageTitle = 'Forgot Password — Dailysuretips';
+$pageDescription = 'Reset your Dailysuretips account password. Enter your email to receive a reset link.';
 
 include __DIR__ . '/../includes/head.php';
 
@@ -21,13 +21,13 @@ ob_start();
                                         name="email"
                                         placeholder="Enter email"
                                         required
-                                        class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#fcbd02] lg:text-[14px]"
+                                        class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[13px] tracking-[0.2px] text-[#1e1e1e] outline-none placeholder:text-[#828282] focus:ring-2 focus:ring-[#ff6900] lg:text-[14px]"
                                     >
                                 </label>
 
                                 <button
                                     type="submit"
-                                    class="flex h-[52px] w-full items-center justify-center rounded-[10px] bg-[#fcbd02] px-[17px] text-[15px] font-bold tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 lg:text-[16px]"
+                                    class="flex h-[52px] w-full items-center justify-center rounded-[10px] bg-[#ff6900] px-[17px] text-[15px] font-bold tracking-[0.2px] text-[#1e1e1e] hover:brightness-95 lg:text-[16px]"
                                 >
                                     Send Reset Link
                                 </button>
@@ -36,7 +36,7 @@ ob_start();
 
                         <p class="px-4 text-center text-[15px] leading-5 lg:text-[16px]">
                             <span class="font-normal text-[#f5f5f5]">Remember your password?</span>
-                            <a href="/login.php" class="font-bold text-[#facb00] underline">LOGIN</a>
+                            <a href="/login.php" class="font-bold text-[#ff6900] underline">LOGIN</a>
                         </p>
 <?php
 $authContent = ob_get_clean();

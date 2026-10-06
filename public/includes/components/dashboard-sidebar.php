@@ -38,7 +38,7 @@ $navItems = [
                 <?php $isActive = $dashboardActive === $item['id']; ?>
                 <a
                     href="<?= htmlspecialchars($item['href']) ?>"
-                    class="flex items-center gap-[11px] p-[15px] text-[16px] font-medium tracking-[0.2px] <?= $isActive ? 'rounded-[12px] bg-[#fcbd02] text-[#1e1e1e]' : 'rounded-[8px] text-[#2c2c2c] hover:bg-[#f5f5f5]' ?>"
+                    class="flex items-center gap-[11px] p-[15px] text-[16px] font-medium tracking-[0.2px] <?= $isActive ? 'rounded-[12px] bg-[#ff6900] text-[#1e1e1e]' : 'rounded-[8px] text-[#2c2c2c] hover:bg-[#f5f5f5]' ?>"
                 >
                     <span class="size-6 shrink-0 overflow-hidden">
                         <img src="<?= $asset ?>/icons/dashboard/<?= htmlspecialchars($item['icon']) ?>" alt="" class="h-full w-full object-contain">
@@ -54,7 +54,7 @@ $navItems = [
             <p class="px-5 text-[14px] font-normal tracking-[0.2px] text-[#767676]">Profile</p>
             <a
                 href="/profile.php"
-                class="flex items-center gap-[11px] p-[15px] text-[16px] font-medium tracking-[0.2px] <?= $dashboardActive === 'account' ? 'rounded-[12px] bg-[#fcbd02] text-[#2c2c2c]' : 'rounded-[8px] text-[#2c2c2c] hover:bg-[#f5f5f5]' ?>"
+                class="flex items-center gap-[11px] p-[15px] text-[16px] font-medium tracking-[0.2px] <?= $dashboardActive === 'account' ? 'rounded-[12px] bg-[#ff6900] text-[#2c2c2c]' : 'rounded-[8px] text-[#2c2c2c] hover:bg-[#f5f5f5]' ?>"
             >
                 <span class="size-6 shrink-0 overflow-hidden">
                     <img src="<?= $asset ?>/icons/dashboard/user.svg" alt="" class="h-full w-full object-contain">

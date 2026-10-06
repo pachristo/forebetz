@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'Account Overview — Forebetz';
-$pageDescription = 'Edit your Forebetz account profile, contact details, and password.';
+$pageTitle = 'Account Overview — Dailysuretips';
+$pageDescription = 'Edit your Dailysuretips account profile, contact details, and password.';
 
 $loggedInUser = [
     'name' => 'Michael Adalikwu',
@@ -77,7 +77,7 @@ include __DIR__ . '/../includes/head.php';
                                                     type="text"
                                                     name="full_name"
                                                     value="<?= htmlspecialchars($profile['full_name']) ?>"
-                                                    class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:text-[14px]"
+                                                    class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#ff6900] sm:text-[14px]"
                                                 >
                                             </label>
                                             <label class="flex min-w-0 flex-col gap-0.5">
@@ -86,7 +86,7 @@ include __DIR__ . '/../includes/head.php';
                                                     type="text"
                                                     name="username"
                                                     value="<?= htmlspecialchars($profile['username']) ?>"
-                                                    class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:text-[14px]"
+                                                    class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#ff6900] sm:text-[14px]"
                                                 >
                                             </label>
                                         </div>
@@ -97,7 +97,7 @@ include __DIR__ . '/../includes/head.php';
                                                 type="email"
                                                 name="email"
                                                 value="<?= htmlspecialchars($profile['email']) ?>"
-                                                class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:text-[14px]"
+                                                class="h-10 w-full rounded-[8px] border border-[#d9d9d9] bg-white px-3 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#ff6900] sm:text-[14px]"
                                             >
                                         </label>
 
@@ -126,7 +126,7 @@ include __DIR__ . '/../includes/head.php';
                                                 <span class="relative">
                                                     <select
                                                         name="country"
-                                                        class="h-10 w-full appearance-none rounded-[8px] border border-[#d9d9d9] bg-white px-3 pr-10 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#fcbd02] sm:text-[14px]"
+                                                        class="h-10 w-full appearance-none rounded-[8px] border border-[#d9d9d9] bg-white px-3 pr-10 text-[12px] tracking-[0.2px] text-[#1e1e1e] outline-none focus:ring-2 focus:ring-[#ff6900] sm:text-[14px]"
                                                     >
                                                         <?php foreach ($countries as $c): ?>
                                                             <option value="<?= htmlspecialchars($c) ?>" <?= $c === $profile['country'] ? 'selected' : '' ?>>
@@ -178,7 +178,7 @@ include __DIR__ . '/../includes/head.php';
 
                                 <button
                                     type="submit"
-                                    class="rounded-[35px] bg-[#fcbd02] px-10 py-[15px] text-[14px] font-medium leading-[22px] text-[#1e1e1e] hover:brightness-95"
+                                    class="rounded-[35px] bg-[#ff6900] px-10 py-[15px] text-[14px] font-medium leading-[22px] text-[#1e1e1e] hover:brightness-95"
                                 >
                                     Save Updates
                                 </button>

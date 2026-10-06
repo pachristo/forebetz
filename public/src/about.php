@@ -4,8 +4,8 @@
  */
 require_once __DIR__ . '/../includes/config.php';
 
-$pageTitle = 'About Us — Forebetz';
-$pageDescription = 'Who Forebetz are and what we offer: free football predictions every day across top leagues.';
+$pageTitle = 'About Us — Dailysuretips';
+$pageDescription = 'Who Dailysuretips are and what we offer: free football predictions every day across top leagues.';
 
 $markets = [
     'Home win',
@@ -26,7 +26,7 @@ include __DIR__ . '/../includes/head.php';
 
         <section class="w-full px-2.5 pt-2 sm:px-8 sm:pt-2.5 lg:px-[100px]">
             <div class="mx-auto w-full max-w-site py-3 sm:py-5">
-                <h1 class="text-[32px] font-medium leading-tight text-[#fcbd02] sm:text-[40px] lg:text-[48px]">
+                <h1 class="text-[32px] font-medium leading-tight text-[#ff6900] sm:text-[40px] lg:text-[48px]">
                     About Us
                 </h1>
                 <p class="mt-1 text-[14px] font-normal leading-normal text-white sm:mt-1.5 sm:text-[16px] sm:leading-7 lg:text-[18px] lg:leading-7">
@@ -45,10 +45,10 @@ include __DIR__ . '/../includes/head.php';
                             </h2>
                             <div class="space-y-3 text-[15px] font-normal leading-7 sm:text-[16px] sm:leading-8 lg:text-[18px] lg:leading-8">
                                 <p>
-                                    Forebetz is a football prediction platform (a trading name of Jeotips Services Limited) created for just one purpose - to help bettors and football lovers make smarter betting decisions every day.
+                                    Dailysuretips is a football prediction platform (a trading name of Jeotips Services Limited) created for just one purpose - to help bettors and football lovers make smarter betting decisions every day.
                                 </p>
                                 <p>
-                                    In a world and a time where there are football prediction sites growing and springing up, Forebetz does not just come to add to the numbers.
+                                    In a world and a time where there are football prediction sites growing and springing up, Dailysuretips does not just come to add to the numbers.
                                 </p>
                                 <p>
                                     We are a dedicated team of football analysts, data lovers, and betting strategists that work to help you understand what it really takes to win.
