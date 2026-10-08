@@ -1,0 +1,344 @@
+/**
+ * Fixture Quick Edit modals (#fastEditModal, #fastEditModal1)
+ * Refined native overlay — same spirit as 100surepredict manual-prediction AJAX modal.
+ */
+
+#fastEditModal,
+#fastEditModal1 {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-sizing: border-box;
+}
+
+#fastEditModal.hidden,
+#fastEditModal1.hidden {
+    display: none !important;
+}
+
+#fastEditModal.flex,
+#fastEditModal1.flex {
+    display: flex !important;
+}
+
+#fastEditModal > .fe-qm__shell,
+#fastEditModal1 > .fe-qm__shell {
+    width: min(920px, 100%);
+    max-height: 92vh;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 1.25rem 1.35rem 1.1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    position: relative;
+}
+
+html.dark #fastEditModal > .fe-qm__shell,
+html.dark #fastEditModal1 > .fe-qm__shell {
+    background-color: #ffffff;
+}
+
+#fastEditModal1 > .fe-qm__shell--vip {
+    width: min(720px, 100%);
+}
+
+.fe-qm__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+}
+
+.fe-qm__title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.3;
+}
+
+.fe-qm__hint {
+    margin: 0.2rem 0 0;
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.35;
+}
+
+.fe-qm__close {
+    border: 0;
+    background: transparent;
+    font-size: 1.35rem;
+    line-height: 1;
+    color: #9ca3af;
+    cursor: pointer;
+    padding: 0.15rem 0.35rem;
+    flex-shrink: 0;
+}
+
+.fe-qm__close:hover {
+    color: #111827;
+}
+
+#fastEditModal .fe-qm__body,
+#fastEditModal1 .fe-qm__body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #111827;
+    border: 0;
+    box-shadow: none;
+}
+
+.fe-qm__match {
+    padding: 0.75rem 0.85rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background: #f9fafb;
+}
+
+.fe-qm__league {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.55rem;
+}
+
+.fe-qm__league img {
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 9999px;
+    border: 1px solid #e5e7eb;
+    object-fit: cover;
+    background: #fff;
+}
+
+.fe-qm__league-name,
+.fe-qm__team-name {
+    color: #111827 !important;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.fe-qm__teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.fe-qm__team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    min-width: 0;
+    flex: 1;
+}
+
+.fe-qm__team img {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+}
+
+.fe-qm__team-name {
+    max-width: 9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.fe-qm__vs {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 0.04em;
+}
+
+.fe-qm__section {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.fe-qm__section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.55rem;
+}
+
+.fe-qm__section-head strong {
+    font-size: 0.9rem;
+    color: #111827;
+}
+
+.fe-qm__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.fe-qm__row {
+    display: grid;
+    grid-template-columns: minmax(7rem, 1.1fr) minmax(0, 1.6fr) minmax(4.5rem, 0.7fr);
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.fe-qm__row-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #374151;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fe-qm__row-tip,
+.fe-qm__row-odds {
+    min-width: 0;
+}
+
+/* Reset Filament / global form styles inside quick-edit modals */
+#fastEditModal input,
+#fastEditModal select,
+#fastEditModal textarea,
+#fastEditModal button,
+#fastEditModal1 input,
+#fastEditModal1 select,
+#fastEditModal1 textarea,
+#fastEditModal1 button {
+    appearance: auto;
+    -webkit-appearance: auto;
+    box-shadow: none;
+    font-family: inherit;
+}
+
+#fastEditModal .fe-qm__field,
+#fastEditModal1 .fe-qm__field {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 2.5rem;
+    margin: 0;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    box-sizing: border-box;
+}
+
+#fastEditModal .fe-qm__field:focus,
+#fastEditModal1 .fe-qm__field:focus {
+    outline: 2px solid #d4af37;
+    outline-offset: 0;
+    border-color: #d4af37;
+}
+
+#fastEditModal .fe-qm__field::placeholder,
+#fastEditModal1 .fe-qm__field::placeholder {
+    color: #9ca3af !important;
+    opacity: 1;
+}
+
+#fastEditModal select.fe-qm__field,
+#fastEditModal1 select.fe-qm__field {
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+#fastEditModal select.fe-qm__field option,
+#fastEditModal1 select.fe-qm__field option {
+    background-color: #fff;
+    color: #111827;
+}
+
+.fe-qm__empty {
+    margin: 0;
+    padding: 0.85rem 1rem;
+    font-size: 0.8125rem;
+    color: #92400e;
+    border: 1px solid #fde68a;
+    border-radius: 0.5rem;
+    background-color: #fffbeb;
+}
+
+.fe-qm__error {
+    color: #b91c1c;
+    font-size: 0.8rem;
+    margin: 0.65rem 0 0;
+    min-height: 1.1rem;
+}
+
+.fe-qm__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.fe-qm__btn {
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1.25;
+}
+
+.fe-qm__btn--primary {
+    background: #d4af37 !important;
+    color: #111 !important;
+}
+
+.fe-qm__btn--primary:hover {
+    filter: brightness(0.96);
+}
+
+.fe-qm__btn--primary:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.fe-qm__btn--muted {
+    background: #e5e7eb !important;
+    color: #111 !important;
+}
+
+.fe-qm__btn--muted:hover {
+    background: #d1d5db !important;
+}
+
+@media (max-width: 720px) {
+    .fe-qm__row {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+        padding: 0.55rem 0.65rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.5rem;
+        background: #fafafa;
+    }
+
+    .fe-qm__row-label {
+        white-space: normal;
+    }
+}

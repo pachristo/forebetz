@@ -1,0 +1,11 @@
+# WinningPredict
+
+> Football predictions, VIP tips, and sports news.
+
+## Site
+
+- [Home](https://winningpredict.com/)
+- [VIP](https://winningpredict.com/vip)
+- [Free tips](https://winningpredict.com/free-tips)
+- [Blog](https://winningpredict.com/blog)
+- [Sitemap](https://winningpredict.com/wp-sitemap.xml)

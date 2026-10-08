@@ -1,0 +1,42 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://winningpredict.com/wp-sitemap.xml
+
+# Disallow specific directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+Disallow: /tmp/
+
+# Disallow URLs with specific query parameters
+Disallow: /*?type=
+Disallow: /*?page=
+Disallow: /*?dt=
+Disallow: /*?date=
+
+# Disallow URLs with index.php in the path
+Disallow: /*index.php
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BadBot
+Disallow: /
+
+Disallow: /*?sessionid=
+Disallow: /*?sort=
+
+User-agent: *
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.xml$
+Allow: /*.json$
+Allow: /*.txt$

@@ -1,0 +1,1 @@
+<?php echo "Apache is using PHP: " . phpversion(); ?>
