@@ -38,7 +38,10 @@ class DayPredictionsPage extends Component
         return once(fn () => SeoPage::query()->where('slug', $this->slug)->where('status', 'published')->first());
     }
 
-    /** Today when it matches, otherwise the next occurrence (the weekend starts on Saturday). */
+    /** Days ahead of today a weekday page may point to; further days fall back to the past occurrence. */
+    private const MAX_DAYS_AHEAD = 2;
+
+    /** The weekday within the next two days, otherwise its most recent past date (the weekend starts on Saturday). */
     protected function targetDate(): CarbonImmutable
     {
         $today = CarbonImmutable::today();
@@ -48,7 +51,11 @@ class DayPredictionsPage extends Component
             return $today->isWeekend() ? $today : $today->next(CarbonImmutable::SATURDAY);
         }
 
-        return $today->dayOfWeek === $day ? $today : $today->next($day);
+        $ahead = ($day - $today->dayOfWeek + 7) % 7;
+
+        return $ahead <= self::MAX_DAYS_AHEAD
+            ? $today->addDays($ahead)
+            : $today->subDays(7 - $ahead);
     }
 
     public function render()
